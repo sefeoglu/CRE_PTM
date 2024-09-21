@@ -1,4 +1,4 @@
-# CRE_PTM
+# CRE PTM
 Prototype-based Continual Relation Extraction Utilizing Pretrained Large Language Model
 * 1.) Protoype Generator
 * 2.) Memory
