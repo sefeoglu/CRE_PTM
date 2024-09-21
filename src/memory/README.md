@@ -1,0 +1,1 @@
+Save selected samples from the previously learnt relation types.
