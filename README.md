@@ -4,3 +4,4 @@ Prototype-based Continual Relation Extraction Utilizing Pretrained Large Languag
 * 2.) Memory
 * 3.) Continuous Fine-tuning of PTMs.
 * 4.) Continuous Evaluation of this model on test sets.
+![Continual Relation Extraction](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/CRE_PTM.png)
