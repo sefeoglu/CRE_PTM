@@ -6,4 +6,4 @@ Prototype-based Continual Relation Extraction Utilizing Pretrained Large Languag
 * 4.) Continuous Evaluation of this model on test sets.
 
 
-<img src="https://github.com/sefeoglu/CRE_PTM/blob/master/doc/CRE_PTM.png" width="600" height="350" />
+<img src="https://github.com/sefeoglu/CRE_PTM/blob/master/doc/CRE_PTM.png" width="550" height="300" />
