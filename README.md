@@ -3,6 +3,8 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 ## Method
 ![Method](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/CRE_PLM.png)
 
+## Folder Structure
+## How works
 
 
 
