@@ -32,9 +32,9 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 |                  | **CRL**~\cite{zhao-etal-2022-consistent}  | 98.2    | 94.6    | 92.5    | 90.5    | 89.4    | 87.9    | 86.9    | 85.6    | 84.5    | 83.1    |
 |                  | **KIP-Framework**~\cite{zhang_2022}  | 98.4    | 93.5    | 92.0    | 91.2    | 90.0    | 88.2    | 86.9    | 85.6    | 84.1    | 82.5    |
 |                  | **CREST**~\cite{Le_Nguyen_2024}     | 98.7    | 93.6    | 93.8    | 92.3    | 91.0    | 89.9    | 87.6    | 86.7    | 86.0    | 84.8    |
-|                  | **Ours with Flan-T5**               | 97.32   | 94.0    | 93.3    | 90.0    | `92.6`  | 84.7    | 85.4    | 79.4    | 77.8    | 69.9    |
-|                  | **Ours with Mistral**              |         |         |         |         |         |         |         |         |         |         |
-|                  | **Ours with Llama2**               |         |         |         |         |         |         |         |         |         |         |
+|                  | **Ours with Flan-T5 Base**               | 97.32   | 94.0    | 93.3    | 90.0    | `92.6`  | 84.7    | 85.4    | 79.4    | 77.8    | 69.9    |
+|                  | **Ours with Mistral-Instruct-v2.0**              |         |         |         |         |         |         |         |         |         |         |
+|                  | **Ours with Llama2-7B-hf-chat**               |         |         |         |         |         |         |         |         |         |         |
 
 
 ### Whole and Average Accuracy
@@ -46,6 +46,6 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 | **EMAR**                          | 31.0           | 36.3           | 53.8           | 68.1           |
 | **CML**                           | 43.7           | 45.3           | --             | --             |
 | **KIP-Framework**~\cite{zhang_2022} | 91.1           | 91.6           | 96.3           | 96.6           |
-| **Ours with Flan-T5**             | `93.78`        | `95.94`        | 90.34          | 95.62          |
-| **Ours with Mistral**             | `96.12`        | `96.12`        | --             | --             |
-| **Ours with Llama**               | 69.47          | 58.44          | --             | --             |
+| **Ours with Flan-T5 Base**             | `93.78`        | `95.94`        | 90.34          | 95.62          |
+| **Ours with Mistral-Instruct-v2.0**             | `96.12`        | `96.12`        | --             | --             |
+| **Ours with Llama2-7B-hf-chat**               | 69.47          | 58.44          | --             | --             |
