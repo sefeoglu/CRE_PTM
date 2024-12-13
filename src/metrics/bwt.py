@@ -10,14 +10,14 @@ def write_json(data, path):
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 def get_results(input_folder):
-    m5 = []
+    run = []
     for task_id in range(1, 10):
         results = []
         for run_id in range(1, 6):
             task = input_folder+"/run_{0}/task_task{1}_current_task_result.json".format(run_id, task_id)
             result = read_json(task)
             results.append(result[0]['acc'])
-        m5.append(results)
+        run.append(results)
     task_10 =[]
 
     for run_id in range(1, 6):
@@ -25,8 +25,8 @@ def get_results(input_folder):
         last = read_json(task)
         task_10.append(last[0]['acc'])
 
-    m5.append(task_10)
-    return m5
+    run.append(task_10)
+    return run
 
 def calculate_bwt(accuracies):
     """
