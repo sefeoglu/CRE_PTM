@@ -21,16 +21,16 @@ def main(input_file, out_file, task_relation_file):
     
     task_data = []
     for _, line in enumerate(input_data):
-        print(line['relation'])
+       
         if line['relation'] in task_relations:
             task_data.append(line)
+            print(line['relation'])
 
     write_json(out_file, task_data)
 
 if __name__ == "__main__":
-
-    input_file = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/data/final/test.json"
-    output_file = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/test_sets/task10/test.json"
-    task_relation_file = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/test_sets/relations/task10.json"
-
-    main(input_file, output_file, task_relation_file)
+    for i in range(1, 11):
+        input_file = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/data/final/dev.json"
+        output_file = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/train_tasks/task{0}/dev.json".format(i)
+        task_relation_file = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/test_sets/relations/task{0}.json".format(i)
+        main(input_file, output_file, task_relation_file)
