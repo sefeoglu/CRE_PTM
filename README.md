@@ -56,9 +56,7 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 |                  | **Ours with Flan-T5 Base**               | 97.32   | 94.0    | 93.3    | 90.0    | `92.6`  | 84.7    | 85.4    | 79.4    | 77.8    | 69.9    |
 
 
-### Whole and Average Accuracy
-
-# Mean Average Accuracy (a) and Whole Accuracy (w) (%) on the TACRED and FewRel Datasets
+### Mean Average Accuracy (a) and Whole Accuracy (w) (%) on the TACRED and FewRel Datasets
 
 Mean Average Accuracy (a) and Whole Accuracy (w) (%) across 5 runs on the TACRED and FewRel datasets.  
 The second-best results are highlighted in green, while the best results are highlighted in blue.
