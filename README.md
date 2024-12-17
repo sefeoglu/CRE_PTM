@@ -58,13 +58,20 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 
 ### Whole and Average Accuracy
 
-| **Method**                       | **TACRED (w)** | **TACRED (a)** | **FewRel (w)** | **FewRel (a)** |
-|-----------------------------------|----------------|----------------|----------------|----------------|
-| **EMR**                           | 21.8           | 26.5           | 42.0           | 54.1           |
-| **EA-EMR**                        | 23.0           | 30.0           | 49.0           | 61.2           |
-| **EMAR**                          | 31.0           | 36.3           | 53.8           | 68.1           |
-| **CML**                           | 43.7           | 45.3           | --             | --             |
-| **KIP-Framework**~\cite{zhang_2022} | 91.1           | 91.6           | 96.3           | 96.6           |
-| **Ours with Flan-T5 Base**             | `93.78`        | `95.94`        | 90.34          | 95.62          |
-| **Ours with Mistral-Instruct-v2.0**             | `96.12`        | `96.12`        | --             | --             |
-| **Ours with Llama2-7B-hf-chat**               | 69.47          | 58.44          | --             | --             |
+# Mean Average Accuracy (a) and Whole Accuracy (w) (%) on the TACRED and FewRel Datasets
+
+Mean Average Accuracy (a) and Whole Accuracy (w) (%) across 5 runs on the TACRED and FewRel datasets.  
+The second-best results are highlighted in green, while the best results are highlighted in blue.
+
+| **Method**                         | **TACRED w** | **TACRED a** | **FewRel w**         | **FewRel a**         |
+|------------------------------------|--------------|--------------|----------------------|----------------------|
+| **EMR**                            | 21.8         | 26.5         | 42.0                | 54.1                |
+| **EA-EMR**                         | 23.0         | 30.0         | 49.0                | 61.2                |
+| **EMAR**                           | 31.0         | 36.3         | 53.8                | 68.1                |
+| **CML**                            | 43.7         | 45.3         | --                  | --                  |
+| **KIP-Framework** [Zhang et al., 2022] | 91.1         | 91.6         | **<span style="color:blue;">96.3</span>** | **<span style="color:blue;">96.6</span>** |
+| **Ours with Flan-T5**              | *<span style="color:green;">95.76</span>* | *<span style="color:green;">95.78</span>* | 70.33               | 70.33               |
+| &nbsp;&nbsp;&nbsp;**with Mistral** | **<span style="color:blue;">96.89</span>** | **<span style="color:blue;">96.76</span>** | --                  | --                  |
+| &nbsp;&nbsp;&nbsp;**with Llama2**  | 68.01        | 67.58        | *<span style="color:green;">86.30</span>* | *<span style="color:green;">86.30</span>* |
+
+Note: "--" indicates results are not available.
