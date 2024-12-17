@@ -11,60 +11,19 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 ├── config.ini
 ├── data
 │   ├── fewrel
-│   │   ├── all_fewrel_data.json
-│   │   ├── fewrel10tasks.json
-│   │   └── pid2name.json
 │   └── tacred
-│       ├── data
-│       │   └── id2rel_tacred.json
-│       └── experiments_task_splits
-│           ├── tacred_tasks.json
-│           └── tacred_tasks_order.json
 ├── doc
-│   ├── CRE_PLM.png
-│   ├── CRE_PLM_arch.pdf
-│   └── CRE_PTM.svg
 ├── metric_results
-│   └── tacred
-│       └── flan_t5
 ├── requirements.txt
 ├── resulting_metrics
-│   └── bwt_flan_t5_tacred.json
 └── src
     ├── CRE
-    │   ├── README.md
-    │   ├── continuous_fine_tuning_t5.py
-    │   ├── cre_decoder_only.py
-    │   ├── evaluation.py
-    │   ├── memory
-    │   │   ├── README.md
-    │   │   └── kmeans_sampleselection.py
-    │   ├── trainer_decoder.py
-    │   └── trainer_t5.py
-    ├── analysis
     ├── clean
-    │   ├── README.md
-    │   ├── llama_clean.py
-    │   ├── llama_clean_tacred.py
-    │   └── metrics_llama.py
     ├── datapreparetation
-    │   ├── data_prepare.py
-    │   ├── dataset_split.py
-    │   ├── fewrel_datapreparation.py
-    │   ├── instruction_ft_data.py
-    │   ├── instruction_ft_data_same_setting.py
-    │   ├── instruction_ft_data_same_setting_fewrel.py
-    │   └── paterns.py
     ├── metrics
-    │   ├── README.md
-    │   ├── acc_metrics.py
-    │   ├── bwt.py
-    │   ├── compute_zero_shot_acc.py
-    │   └── resulting_model_metrics.py
     ├── utils.py
     └── zero_shot_prompting
-        ├── generation.py
-        └── prompt_generation.py````
+````
         
 ## How works
 
