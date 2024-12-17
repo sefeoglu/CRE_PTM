@@ -33,8 +33,6 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 |                  | **KIP-Framework**~\cite{zhang_2022}  | 98.4    | 93.5    | 92.0    | 91.2    | 90.0    | 88.2    | 86.9    | 85.6    | 84.1    | 82.5    |
 |                  | **CREST**~\cite{Le_Nguyen_2024}     | 98.7    | 93.6    | 93.8    | 92.3    | 91.0    | 89.9    | 87.6    | 86.7    | 86.0    | 84.8    |
 |                  | **Ours with Flan-T5 Base**               | 97.32   | 94.0    | 93.3    | 90.0    | `92.6`  | 84.7    | 85.4    | 79.4    | 77.8    | 69.9    |
-|                  | **Ours with Mistral-Instruct-v2.0**              |         |         |         |         |         |         |         |         |         |         |
-|                  | **Ours with Llama2-7B-hf-chat**               |         |         |         |         |         |         |         |         |         |         |
 
 
 ### Whole and Average Accuracy
