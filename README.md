@@ -53,7 +53,7 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 |                  | **CRL**~\cite{zhao-etal-2022-consistent}  | 98.2    | 94.6    | 92.5    | 90.5    | 89.4    | 87.9    | 86.9    | 85.6    | 84.5    | 83.1    |
 |                  | **KIP-Framework**~\cite{zhang_2022}  | 98.4    | 93.5    | 92.0    | 91.2    | 90.0    | 88.2    | 86.9    | 85.6    | 84.1    | 82.5    |
 |                  | **CREST**~\cite{Le_Nguyen_2024}     | 98.7    | 93.6    | 93.8    | 92.3    | 91.0    | 89.9    | 87.6    | 86.7    | 86.0    | 84.8    |
-|                  | **Ours with Flan-T5 Base**               | 97.32   | 94.0    | 93.3    | 90.0    | `92.6`  | 84.7    | 85.4    | 79.4    | 77.8    | 69.9    |
+|                  | **Ours with Flan-T5** | 97.3 | **<span style="color:blue;">94.4</span>** | 91.9 | 90.2 | 87.7 | 85.7 | 84.1 | 79.8 | 77.1 | 70.0 |
 
 
 ### Mean Average Accuracy (a) and Whole Accuracy (w) (%) on the TACRED and FewRel Datasets
