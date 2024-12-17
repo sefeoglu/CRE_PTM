@@ -1,0 +1,71 @@
+
+{
+    "run_1":{
+        "task1":["per:cities_of_residence", "per:other_family", "org:founded", "per:origin"],
+        "task2":["per:cause_of_death", "org:dissolved", "per:employee_of", "org:member_of"],
+        "task3":["per:parents", "per:alternate_names", "org:top_members/employees", "per:siblings"],
+        "task4":["per:stateorprovinces_of_residence", "org:alternate_names", "org:country_of_headquarters", "per:country_of_birth"],
+        "task5":["per:children", "per:date_of_birth", "org:founded_by", "per:countries_of_residence"],
+        "task6":["per:schools_attended", "org:subsidiaries", "org:members", "org:political/religious_affiliation"],
+        "task7":["org:stateorprovince_of_headquarters", "per:charges", "per:stateorprovince_of_birth", "per:title"],
+        "task8":["per:stateorprovince_of_death", "org:number_of_employees/members", "per:city_of_death", "per:spouse"],
+        "task9":["org:website", "per:age", "per:city_of_birth", "per:date_of_death"],
+        "task10":["org:shareholders", "org:parents", "org:city_of_headquarters", "per:religion"]
+
+    },
+    "run_2":{
+        "task1":["per:alternate_names", "org:founded", "per:city_of_birth", "per:employee_of"],
+        "task2":["org:website", "org:member_of", "org:shareholders", "per:schools_attended"],
+        "task3":["per:other_family", "per:title", "org:country_of_headquarters", "per:charges"],
+        "task4":["per:cities_of_residence", "per:siblings", "org:parents", "per:city_of_death"],
+        "task5":["org:number_of_employees/members", "org:founded_by", "per:date_of_birth", "org:stateorprovince_of_headquarters"],
+        "task6":["per:countries_of_residence", "per:religion", "per:date_of_death", "per:stateorprovince_of_death"],
+        "task7":["per:spouse", "per:age", "per:country_of_birth", "per:stateorprovince_of_birth"],
+        "task8":["per:cause_of_death", "org:dissolved", "org:city_of_headquarters", "org:members"],
+        "task9":["per:origin", "per:children", "per:stateorprovinces_of_residence", "org:political/religious_affiliation"],
+        "task10":["per:parents", "org:top_members/employees", "org:subsidiaries", "org:alternate_names"]
+
+    },
+    "run_3":{
+        "task1":["per:stateorprovinces_of_residence", "per:age", "per:parents", "per:date_of_birth"],
+        "task2":["org:political/religious_affiliation", "per:schools_attended", "per:cities_of_residence", "org:number_of_employees/members"],
+        "task3":["org:subsidiaries", "org:city_of_headquarters", "per:children", "org:stateorprovince_of_headquarters"],
+        "task4":["per:employee_of", "org:top_members/employees", "org:parents", "per:stateorprovince_of_birth"],
+        "task5":["per:countries_of_residence", "per:religion", "org:founded", "org:founded_by"],
+        "task6":["per:stateorprovince_of_death", "org:country_of_headquarters", "per:country_of_birth", "per:other_family"],
+        "task7":["org:alternate_names", "per:alternate_names", "per:origin", "org:shareholders"],
+        "task8":["org:website", "org:dissolved", "org:member_of", "per:city_of_birth"],
+        "task9":["per:date_of_death", "per:title", "per:cause_of_death", "per:spouse"],
+        "task10":["per:charges", "per:city_of_death", "per:siblings", "org:members"]
+
+    },
+    "run_4":{
+        "task1":["per:schools_attended", "per:origin", "per:age", "per:stateorprovinces_of_residence"],
+        "task2":["org:stateorprovince_of_headquarters", "per:parents", "per:date_of_birth", "per:spouse"],
+        "task3":["per:cities_of_residence", "org:city_of_headquarters", "org:political/religious_affiliation", "org:shareholders"],
+        "task4":["per:alternate_names", "per:other_family", "org:alternate_names", "per:religion"],
+        "task5":["org:dissolved", "per:city_of_birth", "org:website", "per:countries_of_residence"],
+        "task6":["per:children", "org:members", "per:charges", "per:siblings"],
+        "task7":["per:country_of_birth", "per:title", "org:top_members/employees", "per:date_of_death"],
+        "task8":["per:stateorprovince_of_birth", "org:member_of", "per:stateorprovince_of_death", "org:founded"],
+        "task9":["org:number_of_employees/members", "per:employee_of", "org:parents", "org:founded_by"],
+        "task10":["per:city_of_death", "per:cause_of_death", "org:country_of_headquarters", "org:subsidiaries"]
+
+    },
+    "run_5":{
+        "task1":["org:alternate_names", "per:charges", "per:schools_attended", "per:cause_of_death"],
+        "task2":["org:stateorprovince_of_headquarters", "per:stateorprovinces_of_residence", "per:city_of_birth", "per:country_of_birth"],
+        "task3":["per:stateorprovince_of_death", "per:date_of_birth", "org:number_of_employees/members", "per:cities_of_residence"],
+        "task4":["org:top_members/employees", "per:stateorprovince_of_birth", "per:siblings", "per:city_of_death"],
+        "task5":["org:founded", "per:age", "org:members", "org:parents"],
+        "task6":["org:country_of_headquarters", "org:shareholders", "per:spouse", "org:founded_by"],
+        "task7":["org:member_of", "per:religion", "per:alternate_names", "per:other_family"],
+        "task8":["org:dissolved", "per:origin", "per:employee_of", "org:city_of_headquarters"],
+        "task9":["org:subsidiaries", "org:website", "per:countries_of_residence", "org:political/religious_affiliation"],
+        "task10":["per:parents", "per:date_of_death", "per:children", "per:title"]
+
+    }
+
+}
+
+
