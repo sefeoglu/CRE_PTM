@@ -13,13 +13,12 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 │   ├── fewrel
 │   └── tacred
 ├── doc
-├── metric_results
 ├── requirements.txt
 ├── resulting_metrics
 └── src
     ├── CRE
     ├── clean
-    ├── datapreparetation
+    ├── data-preparetation
     ├── metrics
     ├── utils.py
     └── zero_shot_prompting
