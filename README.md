@@ -30,7 +30,7 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 
 
 ## Results
-### Seen Task Accuracy.
+### 1.) Seen Task Accuracy.
 
 | **Dataset**      | **Method**                          | **1**   | **2**   | **3**   | **4**   | **5**   | **6**   | **7**   | **8**   | **9**   | **10**  |
 |------------------|-------------------------------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
@@ -56,7 +56,7 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 |                  | **Ours with Flan-T5** | 97.3 | **<span style="color:blue;">94.4</span>** | 91.9 | 90.2 | 87.7 | 85.7 | 84.1 | 79.8 | 77.1 | 70.0 |
 
 
-### Mean Average Accuracy (a) and Whole Accuracy (w) (%) on the TACRED and FewRel Datasets
+### 2.)  Mean Average Accuracy (a) and Whole Accuracy (w) (%) on the TACRED and FewRel Datasets
 
 Mean Average Accuracy (a) and Whole Accuracy (w) (%) across 5 runs on the TACRED and FewRel datasets.  
 The second-best results are highlighted in green, while the best results are highlighted in blue.
