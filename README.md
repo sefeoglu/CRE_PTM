@@ -102,15 +102,16 @@ Note: The seen and current taks accuracies will be computed over training with `
 Mean Average Accuracy (a) and Whole Accuracy (w) (%) across 5 runs on the TACRED and FewRel datasets.  
 The second-best results are highlighted in green, while the best results are highlighted in blue.
 
-| **Method**                         | **TACRED w** | **TACRED a** | **FewRel w**         | **FewRel a**         |
-|------------------------------------|--------------|--------------|----------------------|----------------------|
-| **EMR**                            | 21.8         | 26.5         | 42.0                | 54.1                |
-| **EA-EMR**                         | 23.0         | 30.0         | 49.0                | 61.2                |
-| **EMAR**                           | 31.0         | 36.3         | 53.8                | 68.1                |
-| **CML**                            | 43.7         | 45.3         | --                  | --                  |
-| **KIP-Framework** [Zhang et al., 2022] | 91.1         | 91.6         | **<span style="color:blue;">96.3</span>** | **<span style="color:blue;">96.6</span>** |
-| **Ours with Flan-T5**              | *<span style="color:green;">95.76</span>* | *<span style="color:green;">95.78</span>* | 70.33               | 70.33               |
-| &nbsp;&nbsp;&nbsp;**with Mistral** | **<span style="color:blue;">96.89</span>** | **<span style="color:blue;">96.76</span>** | --                  | --                  |
-| &nbsp;&nbsp;&nbsp;**with Llama2**  | 68.01        | 67.58        | *<span style="color:green;">86.30</span>* | *<span style="color:green;">86.30</span>* |
+| **Method**                                | **TACRED (w)** | **TACRED (a)** | **FewRel (w)** | **FewRel (a)** |
+|-------------------------------------------|----------------|----------------|----------------|----------------|
+| **EMR**~[Wang et al., 2019]               | 21.8           | 26.5           | 42.0           | 54.1           |
+| **EA-EMR**~[Wang et al., 2019]            | 23.0           | 30.0           | 49.0           | 61.2           |
+| **EMAR**~[Han et al., 2020]               | 31.0           | 36.3           | 53.8           | 68.1           |
+| **CML**~[Zhao et al., 2022]               | 43.7           | 45.3           | --             | --             |
+| **KIP-Framework**~[Zhang, 2022]           | **91.1**       | **91.6**       | ![cyan] 96.3   | ![cyan] 96.6   |
+| **Ours with Flan-T5 Base**                | ![green] 95.76 | ![green] 95.78 | 70.33          | 70.33          |
+| \_with Mistral-7B-Instruct-v2.0           | **96.89**      | **96.76**      | 35.99          | 46.05          |
+| \_with Llama2-7B-chat-hf                  | 68.01          | 67.58          | ![green] 86.30 | ![green] 86.30 |
 
+---
 Note: "--" indicates results are not available.
