@@ -1,4 +1,9 @@
 import json
+import re
+import json
+from datetime import timedelta
+
+
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -7,15 +12,13 @@ def read_json(path):
 def write_json(data, path):
     with open(path, 'w', encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
-import json
-from datetime import timedelta
 
 # Sample log data
 log_data = open("logs_15.txt","r").read()
 log_data_5 = open("logs_5.txt","r").read()
 log_data_10 = open("logs_10.txt","r").read()
 
-import re
+
 
 
 
