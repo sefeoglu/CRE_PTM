@@ -12,7 +12,7 @@ def write_json(data, path):
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 
-def evaluate_model(experiment_id):
+def evaluate_model( folder_path):
 
     results = []
     all_acc=0
@@ -25,7 +25,7 @@ def evaluate_model(experiment_id):
       total_acc = 0
       for i in range(1, 11):
 
-        input_path = "llama_format_data/test/run_{0}/task{1}/test_1.json".format(experiment_id, i)
+        input_path = f"{folder_path}/run_{0}/task{1}/test_1.json".format(experiment_id, i)
         print(input_path)
         y_true = read_json(input_path)
         y_trues = [line['relation'] for line in y_true]
@@ -62,7 +62,17 @@ def whole_acc(results):
             size_tot += item['size']
 
         whole_acc = cum/size_tot
-        tot_whole_acc +=whole_acc
+        tot_whole_acc += whole_acc
         print(whole_acc)
     model_whole_acc = tot_whole_acc/5
-    return model_whole_acc
+    model_whole_acc_dict = {"model_whole_acc":model_whole_acc}
+    return model_whole_acc_dict
+if __name__ == "__main__":
+    ### TODO: Change the path#
+    # Change the path#
+    result_folder = "results/mistral_results"
+    acc_and_results = evaluate_model(result_folder)
+    model_whole_acc = whole_acc(acc_and_results)
+    write_json(acc_and_results, f"{result_folder}/acc_average_results.json")
+    print(model_whole_acc)  
+    write_json(model_whole_acc, f"{result_folder}/model_whole_acc.json")

@@ -40,19 +40,20 @@ def clean(data, task_relations):
     return answers
 
 if __name__ == "__main__":
-
+    ## TODO ##
+    ## : Change the paths ##
     input_folder_path = "/Users/sefika/phd_projects/CRE_PTM/results/cre_all_results/results_memory_cl_fewrel/task_10_seen_task_llama_fewrel.json"
     out_folder_path = "/Users/sefika/phd_projects/CRE_PTM/src/clean/llama_results_clean/m_10/llama.json"
     tasks_path = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/related_work_results/resluts/tacred_tasks.json"
     tasks = read_json(tasks_path)
 
-    for run_id in range(1, 2):
+    for run_id in range(1, 5):
         run = "run_{0}".format(run_id)
         run_tasks = tasks[run]
         seen_relations = []
         for i, item in enumerate(run_tasks):
             seen_relations.extend(run_tasks[item])
-        for task_id in range(10, 11):
+        for task_id in range(1, 11):
             task_del = "task{0}".format(task_id)
             task_relations = run_tasks[task_del]
             # seen_relations.extend(task_relations)

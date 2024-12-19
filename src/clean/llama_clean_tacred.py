@@ -41,7 +41,8 @@ def clean(data, task_relations):
     return answers
 
 if __name__ == "__main__":
-
+    ## TODO ##
+    ## : Change the paths ##
     input_folder_path = "/Users/sefika/phd_projects/CRE_PTM/src/clean/llama_results_clean/m_10"
     out_folder_path = "/Users/sefika/phd_projects/CRE_PTM/src/clean/llama_results_clean/m_10_clean/"
     tasks_path = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/related_work_results/resluts/tacred_tasks.json"

@@ -49,5 +49,6 @@ def get_answers(folder_path):
                 os.makedirs(os.path.dirname(out_path), exist_ok=True)
                 write_json(extracted_answers, out_path)
 if __name__ == "__main__":
+    ##TODO: Change the path ##
     folder_path = ""
     get_answers(folder_path)
