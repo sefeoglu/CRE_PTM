@@ -17,7 +17,7 @@ from evaluation import evaluate_model, write_json, read_json
 
 def trainer(m):
 
-    for experiment_id in range(1,6):
+    for experiment_id in range(5,6):
 
         print("Experiment: {0}".format(experiment_id))
 

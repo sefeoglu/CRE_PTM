@@ -12,9 +12,9 @@ from huggingface_hub import HfFolder
 import evaluate
 import nltk, torch
 import numpy as np
-from evaluation import evaluate_model
+
 from sklearn.metrics import accuracy_score
-from memory.kmeans_sampleselection import select_samples
+
 from sklearn.metrics import precision_recall_fscore_support
 from transformers import DataCollatorForSeq2Seq
 
@@ -24,7 +24,7 @@ nltk.download("punkt")
 
 # Metric
 metric = evaluate.load("rouge")
-tasks_path = ""
+
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -269,8 +269,6 @@ def get_prediction(model,tokenizer, prompt, length=250,stype='greedy'):
     return response
 
 def Flan_T5_Trainer():
-    ### TODO ###
-    ### Clean Hard coded paths. ###
     for experiment_id in range(1, 6):
 
         print("Experiment: {0}".format(experiment_id))

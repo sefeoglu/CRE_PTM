@@ -19,7 +19,7 @@ logs = ""
 
 
 def trainer(memory_size=10):
-    for experiment_id in range(1,6):
+    for experiment_id in range(1,2):
 
         print("Experiment: {0}".format(experiment_id))
 
