@@ -120,6 +120,9 @@ def main(task_train_data, task_dev_data, task_test_data, relations, task_relatio
     return task_dev_data, task_test_data
 
 if __name__ == "__main__":
+    ### Sample for TASK order##
+    ## TODO ##
+    ## : Change the paths ##
     all_train_data  = read_json("/Users/sefika/phd_projects/CRE_PTM/data/tacred/data/final/train.json")
     all_test_data = read_json("/Users/sefika/phd_projects/CRE_PTM/data/tacred/data/final/test.json")
     all_dev_data = read_json("/Users/sefika/phd_projects/CRE_PTM/data/tacred/data/final/dev.json")
