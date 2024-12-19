@@ -78,7 +78,7 @@ def trainer(memory_size=10):
             #evaluate_model(experiment_id, i+1, model, tokenizer, current_task=False)
             write_json(logs, "KMmeans_CRE_fewrel_{0}/logs.txt".format(experiment_id))
 
-            if m > 0:
+            if memory_size > 0:
                 if i <9:
                     train_data_path = dataset_path+"train_1.json"
                     all_selected_samples = select_samples(model, tokenizer,m, train_data_path, tasks_path)

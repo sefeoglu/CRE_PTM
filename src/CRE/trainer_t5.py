@@ -15,7 +15,7 @@ nltk.download("punkt")
 metric = evaluate.load("rouge")
 from evaluation import evaluate_model, write_json, read_json
 
-def trainer(m):
+def trainer(memory_size):
 
     for experiment_id in range(5,6):
 
@@ -42,9 +42,9 @@ def trainer(m):
         model.save_pretrained("KMmeans_CRE_fewrel_{0}/task_memory_5_1/".format(experiment_id), from_pt=True)
         ## evaluate model
         evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
-        if m >0:
+        if memory_size >0:
             train_data_path = dataset_path+"train_1.json"
-            all_selected_samples = select_samples(model, tokenizer, m, train_data_path, tasks_path)
+            all_selected_samples = select_samples(model, tokenizer, memory_size, train_data_path, tasks_path)
 
             for k in range(2, 11):
                 outpath_selected_samples = 'fewrel/train/run_{0}/task_memory_{1}/train_2.json'.format(experiment_id,k)
@@ -73,7 +73,7 @@ def trainer(m):
             #evaluate model
             evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
             write_json(logs, "drive/MyDrive/ESWC-figures/fewrel/m_15/KMmeans_CRE_fewrel_{0}/logs.txt".format(experiment_id))
-            if m > 0:
+            if memory_size > 0:
                 if i <9:
                     train_data_path = dataset_path+"train_1.json"
                     all_selected_samples = select_samples(model, tokenizer,m, train_data_path, tasks_path)
