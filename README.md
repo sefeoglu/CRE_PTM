@@ -102,7 +102,6 @@ Note: The seen and current taks accuracies will be computed over training with `
 ### 2.)  Mean Average Accuracy (a) and Whole Accuracy (w) (%) on the TACRED and FewRel Datasets
 
 Mean Average Accuracy (a) and Whole Accuracy (w) (%) across 5 runs on the TACRED and FewRel datasets.  
-The second-best results are highlighted in green, while the best results are highlighted in blue.
 
 | **Method**                                | **TACRED (w)** | **TACRED (a)** | **FewRel (w)** | **FewRel (a)** |
 |-------------------------------------------|----------------|----------------|----------------|----------------|
@@ -110,10 +109,11 @@ The second-best results are highlighted in green, while the best results are hig
 | **EA-EMR**~[Wang et al., 2019]            | 23.0           | 30.0           | 49.0           | 61.2           |
 | **EMAR**~[Han et al., 2020]               | 31.0           | 36.3           | 53.8           | 68.1           |
 | **CML**~[Zhao et al., 2022]               | 43.7           | 45.3           | --             | --             |
-| **KIP-Framework**~[Zhang, 2022]           | **91.1**       | **91.6**       | ![cyan] 96.3   | ![cyan] 96.6   |
-| **Ours with Flan-T5 Base**                | ![green] 95.76 | ![green] 95.78 | 70.33          | 70.33          |
-| \_with Mistral-7B-Instruct-v2.0           | **96.89**      | **96.76**      | 35.99          | 46.05          |
-| \_with Llama2-7B-chat-hf                  | 68.01          | 67.58          | ![green] 86.30 | ![green] 86.30 |
+| **KIP-Framework**~[Zhang, 2022]           | **91.1**       | **91.6**       | **96.3 (Best)**| **96.6 (Best)**|
+| **Ours with Flan-T5 Base**                | *95.76 (2nd)*  | *95.78 (2nd)*  | 70.33          | 70.33          |
+| \_with Mistral-7B-Instruct-v2.0           | **96.89 (Best)**| **96.76 (Best)**| 35.99          | 46.05          |
+| \_with Llama2-7B-chat-hf                  | 68.01          | 67.58          | *86.30 (2nd)*  | *86.30 (2nd)*  |
+
 
 ---
 Note: "--" indicates results are not available.
