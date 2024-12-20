@@ -59,7 +59,8 @@ def calculate_bwt(accuracies):
     return bwt
 
 if __name__ == "__main__":
-   
+   ## TODO ##
+   ## remove folder path ###
    input_folder = "/Users/sefika/phd_projects/CRE_PTM/results/cre_all_results/results_memory_cl_tacred/flan_t5/m5"
    m5_accuracies = get_results(input_folder)
    print(np.array(m5_accuracies).shape)
