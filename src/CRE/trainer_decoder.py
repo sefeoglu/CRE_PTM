@@ -42,7 +42,7 @@ def trainer(memory_size=10):
 
         model.save_pretrained("KMmeans_CRE_fewrel_{0}/task_memory_10_1/".format(experiment_id), from_pt=True)
         ## evaluate model
-        #evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
+        evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
         if memory_size >0:
             train_data_path = dataset_path+"train_1.json"
             all_selected_samples = select_samples(model, tokenizer, m, train_data_path, tasks_path)
@@ -74,8 +74,8 @@ def trainer(memory_size=10):
             model.save_pretrained("KMmeans_CRE_fewrel_{0}/task_memory_10_{1}/".format(experiment_id, i+1), from_pt=True)
             model.save_pretrained("KMmeans_CRE_fewrel_{0}/task_memory_10_current_backup_{1}/".format(experiment_id, i+1), from_pt=True)
             #evaluate model
-            #evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
-            #evaluate_model(experiment_id, i+1, model, tokenizer, current_task=False)
+            evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
+            evaluate_model(experiment_id, i+1, model, tokenizer, current_task=False)
             write_json(logs, "KMmeans_CRE_fewrel_{0}/logs.txt".format(experiment_id))
 
             if memory_size > 0:
@@ -109,6 +109,6 @@ def trainer(memory_size=10):
                 logs += train_time
                 model.save_pretrained("KMmeans_CRE_fewrel_{0}/task_memory_10_{1}/".format(experiment_id, i+1), from_pt=True)
                 ### evaluate model
-                if i==9:
-                    evaluate_model(experiment_id, i+1, model, tokenizer, current_task=False)
-                    write_json(logs, "KMmeans_CRE_fewrel_{0}/logs.txt".format(experiment_id))
+
+                evaluate_model(experiment_id, i+1, model, tokenizer, current_task=False)
+                write_json(logs, "KMmeans_CRE_fewrel_{0}/logs.txt".format(experiment_id))
