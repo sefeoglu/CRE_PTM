@@ -1,19 +1,16 @@
 
 
-import json
 import evaluate
-import nltk, torch
+import nltk
 from datetime import datetime
-import numpy as np
 from memory.kmeans_sampleselection import select_samples
 from continuous_fine_tuning_t5 import set_tokenizer, main
 
-from datasets import load_dataset
 
 
 nltk.download("punkt")
 metric = evaluate.load("rouge")
-from evaluation import evaluate_model, write_json, read_json
+from evaluation import evaluate_model, write_json
 
 def trainer(memory_size):
 
