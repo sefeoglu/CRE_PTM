@@ -5,7 +5,7 @@ __pycache__/
 *.DS_Store
 # C extensions
 *.so
-*.txt
+# *.txt
 *.zip
 # **.json
 # Distribution / packaging

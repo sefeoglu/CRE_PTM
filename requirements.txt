@@ -1,0 +1,18 @@
+--upgrade transformers==4.45.2
+--upgrade accelerate
+sentencepiece
+pytesseract transformers datasets rouge-score nltk tensorboard py7zr --upgrade
+ipywidgets
+peft
+bitsandbytes
+evaluate
+trl
+transformers==4.45.2
+accelerate
+sentencepiece
+pytesseract
+transformers
+datasets
+rouge-score
+nltk
+tensorboard
