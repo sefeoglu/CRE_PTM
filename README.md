@@ -23,7 +23,7 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 └── src
     ├── CRE                         -> models, trainer, evaluation, kmeans
     ├── clean                       -> cleaning mistral and llama results from explaination
-    ├── data-preparetation          -> prompt dataset preparation
+    ├── data                        -> prompt dataset preparation
     ├── metrics                     -> bwt, resulting model metrics(acc and whole)
     ├── viz                         -> log viz and pca in notebooks
     ├── utils.py
@@ -35,20 +35,20 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
 **TACRED**:
 * This command with convert data row to (sentence, subject, object, object_type and subject_type)
 ````bash
-$ python src/data-preparetation/data_prepare_tacred.py
+$ python src/data/data_prepare_tacred.py
 ````
 * Split datasets according to setting Cui et al. 2021
 ````bash
-$ python src/data-preparetation/instruction_ft_data_same_setting_tacred.py
+$ python src/data/instruction_ft_data_same_setting_tacred.py
 ````
 **FewRel**
 * Same steps with TACRED
 ````bash
-$ python src/data-preparetation/data_preparation_fewrel.py
+$ python src/data/data_preparation_fewrel.py
 ````
 * split
 ````bash
-$ python src/data-preparetation/instruction_ft_data_same_setting_fewrel.py
+$ python src/data/instruction_ft_data_same_setting_fewrel.py
 ```` 
 2.)Trainer
  * Decoder only models(Llama2-7B-chat-hf and Mistral-Instruct-7B-v2.0)
