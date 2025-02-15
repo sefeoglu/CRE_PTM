@@ -2,6 +2,14 @@ import sys
 import os
 import json
 import random
+sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+
+
+PACKAGE_PARENT = '.'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+PREFIX_PATH = "/".join(os.path.dirname(os.path.abspath(__file__)).split("/")[:-2]) + "/"
+print(PREFIX_PATH)
 
 def read_json(path):
     """ Read a json file from the given path."""
@@ -46,7 +54,7 @@ def get_prompt(sentence, head, tail, relations, prompt_type):
                              
     return template2_zero_shot
 
-def main(task_train_data, task_dev_data, task_test_data, relations, task_relations, task_id, run_id, out_folder, prompt_type=False):
+def prepare_instructions(task_train_data, task_dev_data, task_test_data, relations, task_relations, task_id, run_id, out_folder, prompt_type=False):
 
     data = {"train":task_train_data, "dev":task_dev_data}
     selected_data = []
@@ -118,13 +126,12 @@ def main(task_train_data, task_dev_data, task_test_data, relations, task_relatio
 
     write_json(out_test_file_path, prompts)
     return task_dev_data, task_test_data
+def main(all_train_data_path, all_dev_data_path, all_test_data_path, all_tasks_path, out_folder, prompt_type=False):
+    all_train_data  = read_json(all_train_data_path)
+    all_test_data = read_json(all_test_data_path)
+    all_dev_data = read_json(all_dev_data_path)
+    all_tasks = read_json(all_tasks_path)
 
-if __name__ == "__main__":
-    all_train_data  = read_json("/Users/sefika/phd_projects/CRE_PTM/data/tacred/data/final/train.json")
-    all_test_data = read_json("/Users/sefika/phd_projects/CRE_PTM/data/tacred/data/final/test.json")
-    all_dev_data = read_json("/Users/sefika/phd_projects/CRE_PTM/data/tacred/data/final/dev.json")
-    all_tasks = read_json("/Users/sefika/phd_projects/CRE_PTM/data/tacred/related_work_results/resluts/tacred_tasks_order.json")
-    out_folder = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/data/tacred_task_order/"
     
     for run_id in range(1,11):
 
@@ -141,6 +148,14 @@ if __name__ == "__main__":
             task_dev_data = [item for item in all_dev_data if item['relation'] in task_relations]
             test_relations = [item['relation'] for item in all_test_data if item['relation'] in task_relations]
            
-            main(task_train_data, task_dev_data, task_test_data, task_relations, task_relations,task_id, run_id, out_folder, False)
-            
-            
+            prepare_instructions(task_train_data, task_dev_data, task_test_data, task_relations, task_relations,task_id, run_id, out_folder, prompt_type)
+
+if __name__ == "__main__":
+    config = configparser.ConfigParser()
+    config.read(PREFIX_PATH+'config.ini')
+    all_train_data  = config['PROMPTPREPARATION']['all_train_data']
+    all_test_data = config['PROMPTPREPARATION']['all_test_data']
+    all_dev_data = config['PROMPTPREPARATION']['all_dev_data']
+    all_tasks = config['PROMPTPREPARATION']['all_tasks']
+    out_folder =  config['PROMPTPREPARATION']['out_folder']
+    main(all_train_data, all_dev_data, all_test_data, all_tasks, out_folder)
