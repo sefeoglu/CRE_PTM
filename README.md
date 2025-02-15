@@ -32,6 +32,7 @@ Continual Relation Extraction Utilizing Pretrained Large Language Model
         
 ## How works
 1.) Prepare datasets:
+
 **TACRED**:
 * This command with convert data row to (sentence, subject, object, object_type and subject_type)
 ````bash
