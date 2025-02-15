@@ -55,9 +55,21 @@ def get_prompt(sentence, head, tail, relations, prompt_type):
     return template2_zero_shot
 
 def prepare_instructions(task_train_data, task_dev_data, task_test_data, relations, task_relations, task_id, run_id, out_folder, prompt_type=False):
-
+    """ Prepare instructions for each task in each run
+    Args:
+        task_train_data: train data for the task
+        task_dev_data: dev data for the task
+        task_test_data: test data for the task
+        relations: all relations
+        task_relations: relations for the task
+        task_id: task id
+        run_id: run id
+        out_folder: path to save instructions
+    Return: task_dev_data, task_test_data
+    """
     data = {"train":task_train_data, "dev":task_dev_data}
     selected_data = []
+
     for key, value in data.items():
     
         out_file_path = out_folder+"train/run_{0}/task{1}/{2}_1.json".format(run_id, task_id, key)
@@ -95,7 +107,7 @@ def prepare_instructions(task_train_data, task_dev_data, task_test_data, relatio
             prompts.append(input)
             
         
-        print(len(relations))
+        # print(len(relations))
         write_json(out_file_path, prompts)
         #memory recoding
         if key == "dev":
@@ -126,7 +138,18 @@ def prepare_instructions(task_train_data, task_dev_data, task_test_data, relatio
 
     write_json(out_test_file_path, prompts)
     return task_dev_data, task_test_data
+
+
 def main(all_train_data_path, all_dev_data_path, all_test_data_path, all_tasks_path, out_folder, prompt_type=False):
+    """ Main function to prepare instructions for each task in each run
+    Args:
+        all_train_data_path: path to all train data
+        all_dev_data_path: path to all dev data
+        all_test_data_path: path to all test data
+        all_tasks_path: path to all tasks
+        out_folder: path to save instructions
+
+    """
     all_train_data  = read_json(all_train_data_path)
     all_test_data = read_json(all_test_data_path)
     all_dev_data = read_json(all_dev_data_path)
@@ -151,6 +174,7 @@ def main(all_train_data_path, all_dev_data_path, all_test_data_path, all_tasks_p
             prepare_instructions(task_train_data, task_dev_data, task_test_data, task_relations, task_relations,task_id, run_id, out_folder, prompt_type)
 
 if __name__ == "__main__":
+
     config = configparser.ConfigParser()
     config.read(PREFIX_PATH+'config.ini')
     all_train_data  = config['PROMPTPREPARATION']['all_train_data']
