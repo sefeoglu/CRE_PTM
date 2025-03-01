@@ -29,7 +29,9 @@ share/python-wheels/
 MANIFEST
 #folders and files
 # */src/
-*.json
+data/
+resulting_metrics/prompt_temp1_zero_shot/
+
 *.conll
 *.gold
 # src/
