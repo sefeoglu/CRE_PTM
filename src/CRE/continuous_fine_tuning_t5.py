@@ -268,7 +268,7 @@ def get_prediction(model,tokenizer, prompt, length=250,stype='greedy'):
 
     return response
 
-def Flan_T5_Trainer():
+def Flan_T5_Trainer(config, prefix):
     for experiment_id in range(1, 6):
 
         print("Experiment: {0}".format(experiment_id))
