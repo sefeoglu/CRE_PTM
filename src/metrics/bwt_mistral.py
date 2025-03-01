@@ -1,5 +1,10 @@
 import json
 import numpy as np
+from sklearn.metrics import accuracy_score
+def compute_accuracy(y_true, results):
+    y_pred = [ line['relation'] for line in results]
+    return accuracy_score(y_true, y_pred)
+    
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -14,14 +19,28 @@ def get_results(input_folder):
     for run_id in range(1, 6):
         results = []
         for task_id in range(1, 10):
-            task = input_folder+"/KMmeans_CRE_fewrel_{0}/task_task{1}_current_task_result.json".format(run_id, task_id)
+            task = input_folder + f"/KMmeans_CRE_tacred_{run_id}_extracted/task_task{task_id}_current_task_pred.json"
             result = read_json(task)
-            
-            results.append(result[0]['acc'])
-        
-        task = input_folder+"/KMmeans_CRE_fewrel_{0}/task_{1}_seen_task_result.json".format(run_id, task_id)
-        last = read_json(task)
-        results.append(last[0]['acc'])
+            if len(result) == 1:
+                results.append(result[0]['acc'])
+            else:
+                y_true_path = f"/Users/sefika/phd_projects/CRE_PTM copy/data/tacred/data/llama_format_data/test/run_{run_id}/task{task_id}/test_1.json"
+                y_true = [ item['relation'] for item in read_json(y_true_path)]
+                acc = compute_accuracy(y_true, result)
+                results.append(acc)
+        task_acc = input_folder+f"/KMmeans_CRE_tacred_{run_id}_extracted/task_10_seen_task.json"
+        task_acc = read_json(task_acc)
+        if len(task_acc) == 1:
+            results.append(task_acc[0]['acc'])
+        else:
+            gt = []
+            for task_id in range(1, 11):
+                y_true_path = f"/Users/sefika/phd_projects/CRE_PTM copy/data/tacred/data/llama_format_data/test/run_{run_id}/task{task_id}/test_1.json"
+                y_true = read_json(y_true_path)
+                # print(y_true)
+                gt.extend([line['relation'] for line in y_true])
+            acc = compute_accuracy(gt, task_acc)
+            results.append(acc)
         run.append(results)
 
     return run
@@ -59,7 +78,7 @@ def calculate_bwt(accuracies):
 if __name__ == "__main__":
    ## TODO ##
    ## remove folder path ###
-   input_folder = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/m_10"
+   input_folder = "/Users/sefika/phd_projects/CRE_PTM copy/src/test/results_memory_cl_tacred/llama_results/m_10"
    m5_accuracies = get_results(input_folder)
    print(np.array(m5_accuracies).shape)
    m5_bwt = calculate_bwt(m5_accuracies)
@@ -74,4 +93,4 @@ if __name__ == "__main__":
    
 #    bwt = [{"model":"t5", "m5":m5_bwt, "m10":m10_bwt,"m15":m15_bwt}]
 
-   write_json(m5_bwt, "bwt_flan_t5_fewrel.json")
+   write_json(m5_bwt, "bwt_llama_tacred.json")

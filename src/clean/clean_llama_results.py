@@ -42,12 +42,12 @@ def clean(data, task_relations):
 if __name__ == "__main__":
     ## TODO ##
     ## : Change the paths ##
-    input_folder_path = "/Users/sefika/phd_projects/CRE_PTM/results/cre_all_results/results_memory_cl_fewrel/task_10_seen_task_llama_fewrel.json"
-    out_folder_path = "/Users/sefika/phd_projects/CRE_PTM/src/clean/llama_results_clean/m_10/llama.json"
-    tasks_path = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/related_work_results/resluts/tacred_tasks.json"
+    input_folder_path = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/llama-results/fewrel/llama/m_10/"
+    out_folder_path = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/llama-results/fewrel/llama/cleaned/"
+    tasks_path = "/Users/sefika/phd_projects/CRE_PTM/data/fewrel/fewrel10tasks.json"
     tasks = read_json(tasks_path)
 
-    for run_id in range(1, 5):
+    for run_id in range(1, 6):
         run = "run_{0}".format(run_id)
         run_tasks = tasks[run]
         seen_relations = []
@@ -58,7 +58,7 @@ if __name__ == "__main__":
             task_relations = run_tasks[task_del]
             # seen_relations.extend(task_relations)
             input_path = input_folder_path 
-            out_path = out_folder_path
+            out_path = out_folder_path + run + "/task{0}.json".format(task_id)
             data = read_json(input_path)
             cleaned_data = clean(data,task_relations)
             write_json(out_path, cleaned_data)

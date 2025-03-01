@@ -17,7 +17,7 @@ def evaluate_model( folder_path):
     results = []
     all_acc=0
     for experiment_id in range(1, 6):
-      pred_path = f"super_clean_mistral_fewrel.json"
+      pred_path = f"/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/mistral-n/m_10/KMmeans_CRE_tacred_{experiment_id}_extracted/task_10_seen_task.json"
       preds = read_json(pred_path)
       preds = [line['relation'] for line in preds]
       start_index=0
@@ -25,7 +25,7 @@ def evaluate_model( folder_path):
       total_acc = 0
       for i in range(1, 11):
 
-        input_path = f"{folder_path}/run_{0}/task{1}/test_1.json".format(experiment_id, i)
+        input_path = f"/Users/sefika/phd_projects/CRE_PTM/data/fewrel/llama_format_data/test/run_{experiment_id}/task{i}/test_1.json"
         print(input_path)
         y_true = read_json(input_path)
         y_trues = [line['relation'] for line in y_true]
@@ -44,14 +44,14 @@ def evaluate_model( folder_path):
         total_acc += acc
       print("average_acc: {0}".format(total_acc/10))
       all_acc += total_acc/10
-    print("all_acc: {0}".format(all_acc/1))
-    results_metrics = {"results":results, "all_acc":all_acc/1}
+    print("mean avg_acc: {0}".format(all_acc/5))
+    results_metrics = {"results":results, "mean avg_acc":all_acc/5}
     return results_metrics
 
 def whole_acc(results):
 
     tot_whole_acc=0
-    for i in range(1, 5):
+    for i in range(1, 6):
     # Iterate through the list of results in results["results"]
         run_results = results["results"]
         run_results = [result for result in run_results if result['experiment_id'] == i]
@@ -65,12 +65,12 @@ def whole_acc(results):
         tot_whole_acc += whole_acc
         print(whole_acc)
     model_whole_acc = tot_whole_acc/5
-    model_whole_acc_dict = {"model_whole_acc":model_whole_acc}
+    model_whole_acc_dict = {"mean model_whole_acc":model_whole_acc}
     return model_whole_acc_dict
 if __name__ == "__main__":
     ### TODO: Change the path#
     # Change the path#
-    result_folder = "results/mistral_results"
+    result_folder = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/mistral-n/m_10/"
     acc_and_results = evaluate_model(result_folder)
     model_whole_acc = whole_acc(acc_and_results)
     write_json(acc_and_results, f"{result_folder}/acc_average_results.json")
