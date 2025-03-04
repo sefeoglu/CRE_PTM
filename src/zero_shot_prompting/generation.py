@@ -83,10 +83,10 @@ if __name__ =="__main__":
    configparser_path = "config.ini"
    config = configparser.ConfigParser()
    config.read(configparser_path)
-   input_path = config['DEFAULT']['input_path']
-   output_path = config['DEFAULT']['output_path']
-   number_of_tasks = int(config['DEFAULT']['number_of_tasks'])
-   run_number = int(config['DEFAULT']['run_number'])
+   input_path = config['ZEROSHOT']['input_path']
+   output_path = config['ZEROSHOT']['output_path']
+   number_of_tasks = int(config['ZEROSHOT']['number_of_tasks'])
+   run_number = int(config['ZEROSHOT']['run_number'])
 
    for j in range(1, run_number+1):
       for i in range(1, number_of_tasks+1):
