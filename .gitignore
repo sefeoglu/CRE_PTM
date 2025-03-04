@@ -29,6 +29,7 @@ share/python-wheels/
 MANIFEST
 #folders and files
 # */src/
+resulting_metrics/
 data/
 resulting_metrics/prompt_temp1_zero_shot/
 

@@ -17,15 +17,16 @@ def evaluate_model( folder_path):
     results = []
     all_acc=0
     for experiment_id in range(1, 6):
-      pred_path = f"/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/mistral-n/m_10/KMmeans_CRE_tacred_{experiment_id}_extracted/task_10_seen_task.json"
+      pred_path = f"{folder_path}/model{experiment_id}/task_10_seen_task.json"
       preds = read_json(pred_path)
-      preds = [line['relation'] for line in preds]
+      print(preds)
+      preds = [line['predict'] for line in preds]
       start_index=0
       end_index=0
       total_acc = 0
       for i in range(1, 11):
 
-        input_path = f"/Users/sefika/phd_projects/CRE_PTM/data/fewrel/llama_format_data/test/run_{experiment_id}/task{i}/test_1.json"
+        input_path = f"/Users/sefika/phd_projects/CRE_PTM copy/data/tacred/data/task_data/test/run_{experiment_id}/task{i}/test_1.json"
         print(input_path)
         y_true = read_json(input_path)
         y_trues = [line['relation'] for line in y_true]
@@ -66,13 +67,15 @@ def whole_acc(results):
         print(whole_acc)
     model_whole_acc = tot_whole_acc/5
     model_whole_acc_dict = {"mean model_whole_acc":model_whole_acc}
+
     return model_whole_acc_dict
+
 if __name__ == "__main__":
     ### TODO: Change the path#
     # Change the path#
-    result_folder = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/mistral-n/m_10/"
+    result_folder = "/Users/sefika/phd_projects/CRE_PTM copy/src/test/results_memory_cl_tacred/fine-tuning/relatedwork/"
     acc_and_results = evaluate_model(result_folder)
     model_whole_acc = whole_acc(acc_and_results)
-    write_json(acc_and_results, f"{result_folder}/acc_average_results.json")
+    write_json(acc_and_results, f"pt_1_acc_average_results.json")
     print(model_whole_acc)  
-    write_json(model_whole_acc, f"{result_folder}/model_whole_acc.json")
+    write_json(model_whole_acc, f"pt_1_model_whole_acc.json")

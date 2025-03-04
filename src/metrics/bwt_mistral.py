@@ -18,6 +18,8 @@ def get_results(input_folder):
     run = []
     for run_id in range(1, 6):
         results = []
+        last_task_results = []
+
         for task_id in range(1, 10):
             task = input_folder + f"/KMmeans_CRE_tacred_{run_id}_extracted/task_task{task_id}_current_task_pred.json"
             result = read_json(task)
@@ -28,22 +30,28 @@ def get_results(input_folder):
                 y_true = [ item['relation'] for item in read_json(y_true_path)]
                 acc = compute_accuracy(y_true, result)
                 results.append(acc)
-        task_acc = input_folder+f"/KMmeans_CRE_tacred_{run_id}_extracted/task_10_seen_task.json"
-        task_acc = read_json(task_acc)
-        if len(task_acc) == 1:
-            results.append(task_acc[0]['acc'])
-        else:
-            gt = []
-            for task_id in range(1, 11):
-                y_true_path = f"/Users/sefika/phd_projects/CRE_PTM copy/data/tacred/data/llama_format_data/test/run_{run_id}/task{task_id}/test_1.json"
-                y_true = read_json(y_true_path)
-                # print(y_true)
-                gt.extend([line['relation'] for line in y_true])
-            acc = compute_accuracy(gt, task_acc)
-            results.append(acc)
-        run.append(results)
+
+        task = input_folder+f"/KMmeans_CRE_tacred_{run_id}_extracted/task_10_seen_task.json"
+
+        last_task = read_json(task)
+        end=0
+        start=0
+
+        for task_id in range(1, 11):
+            y_true_path = f"/Users/sefika/phd_projects/CRE_PTM copy/data/tacred/data/llama_format_data/test/run_{run_id}/task{task_id}/test_1.json"
+            y_true = read_json(y_true_path)
+            y_true  = [line['relation'] for line in y_true]
+            end = start + len(y_true)
+            acc = compute_accuracy(y_true, last_task[start:end])
+            start = end
+            last_task_results.append(acc)
+
+        results.append(last_task_results)
+        
+        run.append({'run_id':run_id, 'results':results})
 
     return run
+
 
 def calculate_bwt(accuracies):
     """
@@ -58,31 +66,41 @@ def calculate_bwt(accuracies):
     - BWT: The Backward Transfer metric.
     """
     # Convert to numpy array for easier indexing
+    # print(accuracies)
     accuracies = np.array(accuracies)
-
-    # Number of tasks
+    
+    num_runs = accuracies.shape[0]
     print(accuracies)
-    N = accuracies.shape[0]
-    print(N)
-    # Number of runs -- getting this from the shape of the accuracy matrix
-    num_runs = accuracies.shape[1]
     print(num_runs)
 
 
-    # Compute the backward transfer
-    # Changed the range to iterate up to the minimum of N-1 and num_runs
-    bwt = (1 / (N - 1)) * sum(accuracies[-1, t] - accuracies[t, t] for t in range(min(N - 1, num_runs)))
+    # # Compute the backward transfer
+    # # Changed the range to iterate up to the minimum of N-1 and num_runs
+    for i in range(1, num_runs):
+        accs = accuracies[i]['results'][:9]
+        seen_task = accuracies[i]['results'][9]
+        N = len(accs)
+        bwt = 0
+        for t in range(0, N):
+            A_N_t = accs[t]  # Accuracy on task t after all tasks
+            A_t_t = seen_task[t]
+            bwt += (A_N_t - A_t_t)
+        
+        bwt /= (N - 1)  # Averaging the differences
 
-    return bwt
+    mean_bwt = bwt / num_runs
+    print(mean_bwt)
+
+    return mean_bwt
 
 if __name__ == "__main__":
    ## TODO ##
    ## remove folder path ###
-   input_folder = "/Users/sefika/phd_projects/CRE_PTM copy/src/test/results_memory_cl_tacred/llama_results/m_10"
+   input_folder = "/Users/sefika/phd_projects/CRE_PTM copy/src/test/results_memory_cl_tacred/mistal_results/m_15"
    m5_accuracies = get_results(input_folder)
    print(np.array(m5_accuracies).shape)
    m5_bwt = calculate_bwt(m5_accuracies)
-   print(m5_bwt)
+#    print(m5_bwt)
 #    input_folder = "/Users/sefika/phd_projects/CRE_PTM/results/cre_all_results/results_memory_cl_tacred/flan_t5/m10"
 #    m10_accuracies = get_results(input_folder)
 #    m10_bwt = calculate_bwt(m10_accuracies)
@@ -93,4 +111,4 @@ if __name__ == "__main__":
    
 #    bwt = [{"model":"t5", "m5":m5_bwt, "m10":m10_bwt,"m15":m15_bwt}]
 
-   write_json(m5_bwt, "bwt_llama_tacred.json")
+   write_json(m5_bwt, "bwt_mistral_tacred_15.json")
