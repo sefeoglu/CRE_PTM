@@ -1,12 +1,9 @@
 # Continual Relation Extraction with Pretrained Large Language Models (CRE-PLM)
 Continual Relation Extraction Utilizing Pretrained Large Language Model
 
-**WIP!** (for refactoring and cleaning for hardcoding)
 
-**Note** Upon acceptance, the prediction results, and metrics results and trained models will be shared on Huggingface.
+**Note** Upon acceptance, trained models will be shared on Huggingface.
 
-## Method
-![Method](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/CRE_PLM.png)
 
 ## Folder Structure
 ```xml
