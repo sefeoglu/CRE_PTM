@@ -1,5 +1,4 @@
-# Continual Relation Extraction with Pretrained Large Language Models (CRE-PLM)
-Continual Relation Extraction Utilizing Pretrained Large Language Model
+# Evaluating Large Language Models for Continual Relation Extraction in Task-Incremental Learning
 
 
 **Note** Upon acceptance, trained models will be shared on Huggingface.
