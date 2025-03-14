@@ -62,4 +62,4 @@ if __name__ =="__main__":
     input_file = config['DATAPREPARATION']['input_file']
     output_file = config['DATAPREPARATION']['output_file']
     
-    main(file_path, out_path)
+    main(input_file, output_file)

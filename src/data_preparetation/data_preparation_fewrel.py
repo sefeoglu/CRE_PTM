@@ -65,7 +65,7 @@ def prepare_data_re(data, relation_id_path):
 def main(file_path, out_path, relation_id):
     """ Main function to prepare FewRel dataset."""
     data =  read_json(file_path, relation_id)
-    write_json(out_path, dataset)
+    write_json(out_path, data)
 
     
 if __name__ =="__main__":
@@ -74,4 +74,4 @@ if __name__ =="__main__":
     input_file = config['DATAPREPARATION']['input_file']
     output_file = config['DATAPREPARATION']['output_file']
     relation_id = config['DATAPREPARATION']['relation_id']
-    main(file_path, out_path, relation_id)
+    main(input_file, output_file, relation_id)
