@@ -80,5 +80,5 @@ def get_answers(folder_path):
 
 if __name__ == "__main__":
     ##TODO: Change the path ##
-    folder_path = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/llama-results/fewrel/llama/m_10/KMmeans_CRE_tacred"
+    folder_path = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/mistral_fewrel_clean/m_10/KMmeans_CRE_tacred"
     get_answers(folder_path)

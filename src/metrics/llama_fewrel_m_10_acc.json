@@ -1,0 +1,245 @@
+{
+    "results": [
+        {
+            "acc": 0.8330357142857143,
+            "task_id": 1,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.7080357142857143,
+            "task_id": 2,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.8026785714285715,
+            "task_id": 3,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.6928571428571428,
+            "task_id": 4,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.6830357142857143,
+            "task_id": 5,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.5928571428571429,
+            "task_id": 6,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.6169642857142857,
+            "task_id": 7,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.7491071428571429,
+            "task_id": 8,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.7401785714285715,
+            "task_id": 9,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.6035714285714285,
+            "task_id": 10,
+            "experiment_id": 1,
+            "size": 1120
+        },
+        {
+            "acc": 0.8732142857142857,
+            "task_id": 1,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.41964285714285715,
+            "task_id": 2,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.85,
+            "task_id": 3,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.7303571428571428,
+            "task_id": 4,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.7169642857142857,
+            "task_id": 5,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.7848214285714286,
+            "task_id": 6,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.6419642857142858,
+            "task_id": 7,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.7142857142857143,
+            "task_id": 8,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.5553571428571429,
+            "task_id": 9,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.73125,
+            "task_id": 10,
+            "experiment_id": 2,
+            "size": 1120
+        },
+        {
+            "acc": 0.8205357142857143,
+            "task_id": 1,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.6232142857142857,
+            "task_id": 2,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.8857142857142857,
+            "task_id": 3,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.7892857142857143,
+            "task_id": 4,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.7535714285714286,
+            "task_id": 5,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.7044642857142858,
+            "task_id": 6,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.7598214285714285,
+            "task_id": 7,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.65,
+            "task_id": 8,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.7160714285714286,
+            "task_id": 9,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.6,
+            "task_id": 10,
+            "experiment_id": 3,
+            "size": 1120
+        },
+        {
+            "acc": 0.48035714285714287,
+            "task_id": 1,
+            "experiment_id": 5,
+            "size": 1120
+        },
+        {
+            "acc": 0.6142857142857143,
+            "task_id": 2,
+            "experiment_id": 5,
+            "size": 1120
+        },
+        {
+            "acc": 0.7553571428571428,
+            "task_id": 3,
+            "experiment_id": 5,
+            "size": 1120
+        },
+        {
+            "acc": 0.51875,
+            "task_id": 4,
+            "experiment_id": 5,
+            "size": 1120
+        },
+        {
+            "acc": 0.9276785714285715,
+            "task_id": 5,
+            "experiment_id": 5,
+            "size": 1120
+        },
+        {
+            "acc": 0.8607142857142858,
+            "task_id": 6,
+            "experiment_id": 5,
+            "size": 1120
+        },
+        {
+            "acc": 0.8553571428571428,
+            "task_id": 7,
+            "experiment_id": 5,
+            "size": 1120
+        },
+        {
+            "acc": 0.7375,
+            "task_id": 8,
+            "experiment_id": 5,
+            "size": 1120
+        },
+        {
+            "acc": 0.6142857142857143,
+            "task_id": 9,
+            "experiment_id": 5,
+            "size": 1120
+        },
+        {
+            "acc": 0.8098214285714286,
+            "task_id": 10,
+            "experiment_id": 5,
+            "size": 1120
+        }
+    ],
+    "mean_avg_acc": 0.7129241071428571
+}

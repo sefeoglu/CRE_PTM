@@ -133,7 +133,7 @@ def formatting_prompts_func(example):
     return formatted_texts
 
 
-def main(model_id, dataset_id, task_id, local):
+def main(model_id, dataset_id, task_id, local, parameters):
 
     print("Fine tuning model: ", model_id, " on dataset: ", dataset_id)
 

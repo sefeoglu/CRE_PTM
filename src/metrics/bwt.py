@@ -77,8 +77,8 @@ def calculate_bwt(accuracies):
         N = len(accs)
         bwt = 0
         for t in range(0, N):
-            A_N_t = accs[t]  # Accuracy on task t after all tasks
-            A_t_t = seen_task[t]
+            A_t_t = accs[t]  # Accuracy on task t after all tasks
+            A_N_t = seen_task[t]
             bwt += (A_N_t - A_t_t)
         
         bwt /= (N - 1)  # Averaging the differences

@@ -17,14 +17,15 @@ from sklearn.metrics import accuracy_score
 
 from sklearn.metrics import precision_recall_fscore_support
 from transformers import DataCollatorForSeq2Seq
-
+from evaluation import evaluate_model
+from memory.kmeans_sampleselection import select_samples
 from datasets import concatenate_datasets
 
 nltk.download("punkt")
 
 # Metric
 metric = evaluate.load("rouge")
-
+task_path =""
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
