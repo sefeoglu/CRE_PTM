@@ -5,8 +5,7 @@ import configparser
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
 from src.data import data_preparation_fewrel, data_preparation_tacred, instruction_ft_data_same_setting_fewrel, instruction_ft_data_same_setting_tacred
 
-from src.evaluation import evaluate_model, write_json
-from sr.CRE import trainer_t5, trainer_decoder
+from src.CRE import trainer_t5, trainer_decoder
 
 
 if __name__ == "__main__":
