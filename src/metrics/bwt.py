@@ -88,22 +88,10 @@ def calculate_bwt(accuracies):
     return mean_bwt
 
 if __name__ == "__main__":
-   ## TODO ##
-   ## remove folder path ###
    input_folder = "/Users/sefika/phd_projects/CRE_PTM copy/src/test/results_memory_cl_tacred/memory_experiments/m10"
    m5_accuracies = get_results(input_folder)
    print(np.array(m5_accuracies).shape)
    m5_bwt = calculate_bwt(m5_accuracies)
    print(m5_bwt)
-   
-#    input_folder = "/Users/sefika/phd_projects/CRE_PTM/results/cre_all_results/results_memory_cl_tacred/flan_t5/m10"
-#    m10_accuracies = get_results(input_folder)
-#    m10_bwt = calculate_bwt(m10_accuracies)
-
-#    input_folder = "/Users/sefika/phd_projects/CRE_PTM/results/cre_all_results/results_memory_cl_tacred/flan_t5/m15"
-#    m15_accuracies = get_results(input_folder)
-#    m15_bwt = calculate_bwt(m15_accuracies)
-   
-#    bwt = [{"model":"t5", "m5":m5_bwt, "m10":m10_bwt,"m15":m15_bwt}]
 
    write_json(m5_bwt, "bwt_flan_t5_tacred_m_10.json")

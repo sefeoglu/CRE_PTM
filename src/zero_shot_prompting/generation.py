@@ -21,11 +21,9 @@ class LLM(object):
 
 
     def get_model(self, model_id="google/flan-t5-base"):
-        """_summary_
-
+        """
         Args:
             model_id (str, optional): LLM name at HuggingFace . Defaults to "google/flan-t5-xl".
-
         Returns:
             model: model from Hugging Face
             tokenizer: tokenizer of this model
@@ -39,8 +37,7 @@ class LLM(object):
         return model,tokenizer
 
     def get_prediction(self, prompt, length=30):
-        """_summary_
-
+        """
         Args:
             model : loaded model
             tokenizer: loaded tokenizer

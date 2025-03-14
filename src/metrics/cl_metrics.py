@@ -83,8 +83,7 @@ def whole_acc(results):
     return model_whole_acc_dict
 
 if __name__ == "__main__":
-    ### TODO: Change the path#
-    # Change the path#
+
     result_folder = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/llama_seen_clean_mist_code"
     acc_and_results = evaluate_model(result_folder)
     model_whole_acc = whole_acc(acc_and_results)
