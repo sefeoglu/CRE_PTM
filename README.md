@@ -1,4 +1,4 @@
-# Evaluating Large Language Models for Continual Relation Extraction in Task-Incremental Learning
+# Evaluating Large Language Models for Continual Relation Extraction in Incremental Task Learning
 
 
 **Note** Upon acceptance, trained models will be shared on Huggingface.
@@ -66,10 +66,3 @@ $ python src/clean/clean_llama_results.py
 $ python src/metrics/resulting_model_metrics.py
 $ python src/metrics/bwt.py
 ````
-Note: The seen and current taks accuracies will be computed over training with ```src/CRE/evaluation.py``` 
-## Results
-
-Mean Average Accuracy (a) and Whole Accuracy (w) (%) across 5 runs on the TACRED and FewRel datasets.  
-
----
-Note: "--" indicates results are not available.
