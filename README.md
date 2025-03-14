@@ -19,7 +19,7 @@
 └── src
     ├── CRE                         -> models, trainer, evaluation, kmeans
     ├── clean                       -> cleaning mistral and llama results from explaination
-    ├── data                        -> prompt dataset preparation
+    ├── data_preparation                        -> prompt dataset preparation
     ├── metrics                     -> bwt, resulting model metrics(acc and whole)
     ├── viz                         -> log viz and pca in notebooks
     ├── utils.py
