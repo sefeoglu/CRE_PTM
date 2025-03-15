@@ -19,7 +19,7 @@ The results and datasets used in this work are available at [drive](https://driv
 └── src
     ├── CRE                         -> continual training of Flan T5 Base, Llama2 and Mistral
     ├── analysis_viz                -> Visualization like logs and  section 4 figures.
-    ├── clean                       -> cleaning of results of llama and mistral from instructions.
+    ├── clean                       -> cleaning of results of llama and mistral from explainations and instructions.
     ├── data_preparetation          -> prompt dataset generation
     ├── metrics                     -> bwt, whole and average accuracy calculation
     ├── utils.py                    -> read and write
@@ -63,10 +63,9 @@ $ python src/CRE/trainer_t5.py
 3.) Clean decoder-only models results from explainations
 
 ````bash
-$ python src/clean/clean_results.py
+$ python src/clean/clean_decoder_results.py
 ````
 4.) Metrics
-
 
 Average and Whole Accuracy Metrics
 ````bash

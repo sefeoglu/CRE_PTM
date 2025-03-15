@@ -1,6 +1,19 @@
 import os
 import re
 import json
+
+import configparser
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+
+
+PACKAGE_PARENT = '.'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+PREFIX_PATH = "/".join(os.path.dirname(os.path.abspath(__file__)).split("/")[:-2]) + "/"
+
+print(PREFIX_PATH)
+
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -37,9 +50,9 @@ def extact_answers(data, relation_types):
             return relation
     return ''
 
-def clean(data):
-    task_relations = read_json("/Users/sefika/phd_projects/CRE_PTM/data/fewrel/all_fewrel_data.json")
-    relation_types = [ item['relation'].replace(' ', "_") for item in task_relations]
+def clean(data, task_relations_path):
+    task_relations = read_json(task_relations_path)
+    relation_types = [item['relation'].replace(' ', "_") for item in task_relations]
     relation_types = list(set(relation_types))
     delimiter = "[/INST] ### Answer:"
     answers = []
@@ -55,7 +68,7 @@ def clean(data):
 
     return answers
 
-def get_answers(folder_path):
+def get_answers(folder_path, task_relations_path):
     # Print results
     try:
         for i in range(1, 6):
@@ -69,7 +82,7 @@ def get_answers(folder_path):
 
                     # # Extract answers
                     # extracted_answers = extract_answers(data)
-                    extracted_answers = clean(data)
+                    extracted_answers = clean(data, task_relations_path)
                     out_path = os.path.join(folder+'_extracted', file)
                     os.makedirs(os.path.dirname(out_path), exist_ok=True)
                     write_json(extracted_answers, out_path)
@@ -79,6 +92,8 @@ def get_answers(folder_path):
         print(e)
 
 if __name__ == "__main__":
-    ##TODO: Change the path ##
-    folder_path = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/mistral_fewrel_clean/m_10/KMmeans_CRE_tacred"
-    get_answers(folder_path)
+    config = configparser.ConfigParser()
+    config.read(PREFIX_PATH + 'config.ini')
+    results_path = config['TEST']['results_path']
+    tasks_path = config['TEST']['tasks_path']
+    get_answers(results_path, tasks_path)
