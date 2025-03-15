@@ -1,7 +1,9 @@
 import json
 from sklearn.metrics import accuracy_score
-
+import configparser
 import numpy as np
+import os
+
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -12,12 +14,19 @@ def write_json(data, path):
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 
-def evaluate_model( folder_path):
-
+def evaluate_model(folder_path, test_folder):
+    """
+    Evaluate the model on the test data and return the results.
+    Args:
+    - folder_path: The path to the folder containing the model predictions.
+    - test_folder: The path to the folder containing the test data.
+    Returns:
+    - A dictionary containing the results and the mean average accuracy.
+    """
     results = []
     all_acc=0
-    for experiment_id in [1,2,3,5]:
-      pred_path = f"{folder_path}/KMmeans_CRE_tacred_{experiment_id}_extracted/task_10_seen_task.json"
+    for experiment_id in range(1, 6):
+      pred_path = f"{folder_path}/model{experiment_id}/task_10_seen_task.json"
       preds = read_json(pred_path)
       print(len(preds))
       preds = [line['predict'] for line in preds]
@@ -26,7 +35,7 @@ def evaluate_model( folder_path):
       total_acc = 0
       for i in range(1, 11):
 
-        input_path = f"/Users/sefika/phd_projects/CRE_PTM/data/fewrel/llama_format_data/test/run_{experiment_id}/task{i}/test_1.json"
+        input_path = f"{test_folder}/test/run_{experiment_id}/task{i}/test_1.json"
         # print(input_path)
         y_true = read_json(input_path)
         y_trues = [line['relation'] for line in y_true]
@@ -53,18 +62,24 @@ def evaluate_model( folder_path):
         results.append(row)
         start_index = end_index
         total_acc += acc
-    #   print("average_acc: {0}".format(total_acc/10))
+
       all_acc += total_acc/10
-    # print("mean avg_acc: {0}".format(all_acc/5))
-    results_metrics = {"results":results, "mean_avg_acc":all_acc/4}
+    results_metrics = {"results":results, "mean_avg_acc":all_acc/5}
     return results_metrics
 
 def whole_acc(results):
+    """
+    Calculate the whole accuracy of the model.
+    Args:
+    - results: The results of the model evaluation.
+    Returns:
+    - A dictionary containing the mean whole accuracy of the model.
+    """
 
     tot_whole_acc=0
     # print(results)
     # return 0
-    for i in [1,2,3,5]:
+    for i in range(1, 6):
     # Iterate through the list of results in results["results"]
         run_results = results["results"]
         run_results = [result for result in run_results if result['experiment_id'] == i]
@@ -76,19 +91,23 @@ def whole_acc(results):
 
         whole_acc = cum/size_tot
         tot_whole_acc += whole_acc
-        # print(whole_acc)
-    model_whole_acc = tot_whole_acc/4
+    
+    model_whole_acc = tot_whole_acc/5
+
     model_whole_acc_dict = {"mean model_whole_acc":model_whole_acc}
 
     return model_whole_acc_dict
 
 if __name__ == "__main__":
+    config = configparser.ConfigParser()
+    config.read("config.ini")
+    test_folder = config["METRICS"]["test_data_folder"]
+    results_folder = config["METRICS"]["results_folder"]
+    w_results_path = config["METRICS"]["w_result_file_path"]
+    a_results_path = config["METRICS"]["a_result_file_path"]
 
-    result_folder = "/Users/sefika/phd_projects/CRE_PTM/resulting_metrics/results/fewrel/llama_seen_clean_mist_code"
-    acc_and_results = evaluate_model(result_folder)
+    acc_and_results = evaluate_model(result_folder, test_folder)
     model_whole_acc = whole_acc(acc_and_results)
-    write_json(acc_and_results, f"llama_fewrel_m_10_acc.json")
+    write_json(acc_and_results, a_results_path)
     
-    write_json(model_whole_acc, f"llama_fewrel_whole_acc.json")
-    print(acc_and_results['mean_avg_acc'])
-    print(model_whole_acc)  
+    write_json(model_whole_acc, w_results_path)
