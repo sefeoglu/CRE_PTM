@@ -3,7 +3,7 @@
 
 The results and datasets used in this work are available at [drive](https://drive.google.com/drive/folders/1ev9EBUaDNjTfeIPhUNcFEXthUQ3kAFVZ?usp=drive_link)
 ![CRE](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/cre.png)
-**Note** Upon acceptance, trained models will be shared on Huggingface.
+**Note** Upon acceptance, trained models will be public on HuggingFace.
 
 
 ## Folder Structure
