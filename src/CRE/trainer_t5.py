@@ -38,7 +38,7 @@ def trainer(config, memory_size=10):
 
         metric = evaluate.load("rouge")
         start_time = datetime.now()
-        model, tokenizer, trainer = main(model_id, dataset_path, tasks_path, task_id, False)
+        model, tokenizer, trainer = main(config, model_id, dataset_path, tasks_path, task_id, False)
         end_time = datetime.now()
         train_time = 'Base Train. Experiment Id: {0}. Task Id: {1}. Duration: {2} \n'.format(experiment_id, task_id, end_time - start_time)
         logs += train_time
