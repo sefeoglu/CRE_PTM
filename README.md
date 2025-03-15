@@ -1,6 +1,6 @@
 # Evaluating Large Language Models for Continual Relation Extraction in Incremental Task Learning
 
-
+![CRE](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/cre.png)
 **Note** Upon acceptance, trained models will be shared on Huggingface.
 
 
