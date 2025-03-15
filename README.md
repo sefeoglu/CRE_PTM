@@ -28,6 +28,8 @@ The results and datasets used in this work are available at [drive](https://driv
         
 ## How it works
 Setup configuration in `config.ini` according to your needs before starting running experiments.
+
+
 1.) Prepare datasets:
 
 **TACRED**:
@@ -49,6 +51,7 @@ $ python src/data/data_preparation_fewrel.py
 $ python src/data/instruction_ft_data_same_setting_fewrel.py
 ```` 
 2.)Trainer
+
  * Decoder only models(Llama2-7B-chat-hf and Mistral-Instruct-7B-v2.0)
 ````bash
 $ python python src/CRE/trainer_decoder.py
@@ -58,10 +61,13 @@ $ python python src/CRE/trainer_decoder.py
 $ python src/CRE/trainer_t5.py
 ````
 3.) Clean decoder-only models results from explainations
+
 ````bash
 $ python src/clean/clean_results.py
 ````
 4.) Metrics
+
+
 Average and Whole Accuracy Metrics
 ````bash
 $ python src/metrics/cl_metrics.py
