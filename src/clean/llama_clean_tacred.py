@@ -2,6 +2,18 @@ from sklearn.metrics import accuracy_score
 import sys
 import os
 import json
+import configparser
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+
+
+PACKAGE_PARENT = '.'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+PREFIX_PATH = "/".join(os.path.dirname(os.path.abspath(__file__)).split("/")[:-2]) + "/"
+
+print(PREFIX_PATH)
+
 def read_json(path):
     """ Read a json file from the given path."""
     with open(path, 'r') as f:
@@ -41,12 +53,14 @@ def clean(data, task_relations):
     return answers
 
 if __name__ == "__main__":
-    ## TODO ##
-    ## : Change the paths ##
-    input_folder_path = "/Users/sefika/phd_projects/CRE_PTM/src/clean/llama_results_clean/m_10"
-    out_folder_path = "/Users/sefika/phd_projects/CRE_PTM/src/clean/llama_results_clean/m_10_clean/"
-    tasks_path = "/Users/sefika/phd_projects/CRE_PTM/data/tacred/related_work_results/resluts/tacred_tasks.json"
+
+    config = configparser.ConfigParser()
+    config.read(PREFIX_PATH + 'config.ini')
+    results_path = config['TEST']['results_path']
+    out_folder_path = config['TEST']['clean_results_folder']
+    tasks_path = config['TEST']['tasks_path']
     tasks = read_json(tasks_path)
+
 
     for run_id in range(1, 6):
         run = "run_{0}".format(run_id)
@@ -58,8 +72,8 @@ if __name__ == "__main__":
             task_del = "task{0}".format(task_id)
             task_relations = run_tasks[task_del]
             # seen_relations.extend(task_relations)
-            input_path = input_folder_path+f"/KMmeans_CRE_tacred_{run_id}/task_{task_id}_seen_task.json"
-            out_path = out_folder_path+f"/m_10_clean/KMmeans_CRE_tacred_{run_id}/task_{task_id}_seen_task.json"
+            input_path = input_folder_path+f"/model{run_id}/task_{task_id}_seen_task.json"
+            out_path = out_folder_path+f"/model{run_id}/task_{task_id}_seen_task.json"
             data = read_json(input_path)
             cleaned_data = clean(data,task_relations)
             write_json(out_path, cleaned_data)
