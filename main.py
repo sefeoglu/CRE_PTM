@@ -25,9 +25,9 @@ if __name__ == "__main__":
 
     ## 2. Model Training, Evaluation and Prediction
     if config['MODEL']['model_id'] == 't5':
-        trainer_t5.main()
+        trainer_t5.trainer()
     elif config['MODEL']['model_id'] == 'decoder':
-        trainer_decoder.main()
+        trainer_decoder.trainer()
     else:
         print('Model not supported')
   
