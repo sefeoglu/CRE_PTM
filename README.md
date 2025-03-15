@@ -12,23 +12,22 @@ The results and datasets used in this work are available at [drive](https://driv
 ├── LICENSE
 ├── README.md
 ├── config.ini
-├── data
-│   ├── fewrel                      -> settings and data split setting here
-│   └── tacred                      -> settings and data split setting here
-├── doc                             -> Design figure
-├── requirements.txt                -> Libraries
-├── resulting_metrics               -> resulting metrics will be saved here (will be shared on huggingface)
+├── data                            -> settings and data split setting here for tacred and fewrel like relation types per task
+├── doc                             -> figures
+├── main.py
+├── requirements.txt                -> dependecies like libraries
 └── src
-    ├── CRE                         -> models, trainer, evaluation, kmeans
-    ├── clean                       -> cleaning mistral and llama results from explaination
-    ├── data_preparation            -> prompt dataset preparation
-    ├── metrics                     -> bwt, resulting model metrics(acc and whole)
-    ├── viz                         -> log viz and pca in notebooks
-    ├── utils.py
-    └── zero_shot_prompting         -> ablation study
+    ├── CRE                         -> continual training of Flan T5 Base, Llama2 and Mistral
+    ├── analysis_viz                -> Visualization like logs and  section 4 figures.
+    ├── clean                       -> cleaning of results of llama and mistral from instructions.
+    ├── data_preparetation          -> prompt dataset generation
+    ├── metrics                     -> bwt, whole and average accuracy calculation
+    ├── utils.py                    -> read and write
+    └── zero_shot_prompting         -> ablation study, but not in the paper.
 ````
         
-## How works
+## How it works
+Setup configuration in `config.ini` according to your needs before starting running experiments.
 1.) Prepare datasets:
 
 **TACRED**:
@@ -60,11 +59,15 @@ $ python src/CRE/trainer_t5.py
 ````
 3.) Clean decoder-only models results from explainations
 ````bash
-$ python src/clean/clean_mistral_results.py
-$ python src/clean/clean_llama_results.py
+$ python src/clean/clean_results.py
 ````
 4.) Metrics
+Average and Whole Accuracy Metrics
 ````bash
-$ python src/metrics/resulting_model_metrics.py
+$ python src/metrics/cl_metrics.py
+
+````
+Backward Knowledge Transfer Computation
+````bash
 $ python src/metrics/bwt.py
 ````
