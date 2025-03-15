@@ -3,7 +3,17 @@ from sklearn.metrics import accuracy_score
 import configparser
 import numpy as np
 import os
+import configparser
 
+sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+
+
+PACKAGE_PARENT = '.'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+PREFIX_PATH = "/".join(os.path.dirname(os.path.abspath(__file__)).split("/")[:-2]) + "/"
+
+print(PREFIX_PATH)
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -100,7 +110,7 @@ def whole_acc(results):
 
 if __name__ == "__main__":
     config = configparser.ConfigParser()
-    config.read("config.ini")
+    config.read( PREFIX_PATH + "config.ini")
     test_folder = config["METRICS"]["test_data_folder"]
     results_folder = config["METRICS"]["results_folder"]
     w_results_path = config["METRICS"]["w_result_file_path"]

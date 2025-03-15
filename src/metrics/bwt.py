@@ -4,6 +4,16 @@ from sklearn.metrics import accuracy_score
 import configparser
 import os
 
+sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+
+
+PACKAGE_PARENT = '.'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+PREFIX_PATH = "/".join(os.path.dirname(os.path.abspath(__file__)).split("/")[:-2]) + "/"
+
+print(PREFIX_PATH)
+
 def compute_accuracy(y_true, results):
 
     y_pred = [ line['predict'] for line in results]
@@ -113,7 +123,7 @@ def calculate_bwt(accuracies):
 
 if __name__ == "__main__":
     config = configparser.ConfigParser()
-    config.read('config.ini')
+    config.read(PREFIX_PATH + 'config.ini')
     results_folder = config["METRICS"]["results_folder"]
     test_data = config["METRICS"]["test_data_folder"]
     bwt_file_path = config["METRICS"]["bwt_file_path"]
