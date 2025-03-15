@@ -4,7 +4,7 @@ import evaluate
 import nltk
 from datetime import datetime
 from memory.kmeans_sampleselection import select_samples
-from continuous_fine_tuning_t5 import set_tokenizer, main
+from cre_t5 import set_tokenizer, main
 
 
 

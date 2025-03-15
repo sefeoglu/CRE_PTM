@@ -35,7 +35,7 @@ if __name__ == "__main__":
     if config['MODEL']['model_id'] == 't5':
         trainer_t5.trainer(config, memory_size=10)
     elif config['MODEL']['model_id'] == 'decoder':
-        trainer_decoder.trainer(config,memory_size=10)
+        trainer_decoder.trainer(config, memory_size=10)
     else:
         print('Model not supported')
   

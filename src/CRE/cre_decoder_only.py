@@ -133,7 +133,7 @@ def formatting_prompts_func(example):
     return formatted_texts
 
 
-def main(model_id, dataset_id, task_id, local, parameters):
+def main(config, model_id, dataset_id, task_id, local, parameters):
 
     print("Fine tuning model: ", model_id, " on dataset: ", dataset_id)
 
@@ -142,33 +142,39 @@ def main(model_id, dataset_id, task_id, local, parameters):
     # quantized pretrained model
     model = load_model(model_id, local)
     print("len:"+str(len(val_dataset)))
+    lora_a = parameters['LORA']['lora_alpha']
+    lora_d = parameters['LORA']['lora_dropout']
+    lora_r = parameters['LORA']['r']
+    model_name = config['MODEL']["model_id"]
     # apply LoRA configuration for CAUSAL LM, decode only models, such as Llama2-7B and Mistral-7B
     lora_config = LoraConfig(
-        lora_alpha=32,
-        lora_dropout=0.1,
-        r=8,
+        lora_alpha=lora_a,
+        lora_dropout=lora_d,
+        r=lora_r,
         bias="none",
         task_type="CAUSAL_LM",
     )
     repository_id = f"{model_id}-{task_id}"
 
     model = get_peft_model(model, lora_config)
-    tokenizer = load_tokenizer("mistralai/Mistral-7B-Instruct-v0.2")
-
-
+    tokenizer = load_tokenizer(model_name)
+    epochs = parameters['PARAMETERS']['epochs']
+    bs = parameters['PARAMETERS']['bs']
+    lr = parameters['PARAMETERS']['lr']
+    weight_decay = parameters['PARAMETERS']['weight_decay']
     #declare training arguments
     #please change it for more than one epoch. such as add val_loss for evaluation on epoch..
     training_args = TrainingArguments(
             do_eval=True,
             eval_strategy="epoch",
             output_dir=repository_id,
-            num_train_epochs=5,
-            per_device_train_batch_size=4,
-            per_device_eval_batch_size=4,
+            num_train_epochs=epochs,
+            per_device_train_batch_size=bs,
+            per_device_eval_batch_size=bs,
             save_steps=25,
             logging_steps=25,
-            learning_rate=2e-4,
-            weight_decay=0.001,
+            learning_rate=lr,
+            weight_decay=weight_decay,
             fp16=True,
             max_grad_norm=0.3,
             max_steps=-1,

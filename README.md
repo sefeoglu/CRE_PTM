@@ -28,8 +28,11 @@ The results and datasets used in this work are available at [drive](https://driv
         
 ## How it works
 Setup configuration in `config.ini` according to your needs before starting running experiments.
-
-
+```bash
+$ python main.py
+```
+or 
+follow the steps below.
 1.) Prepare datasets:
 
 **TACRED**:
