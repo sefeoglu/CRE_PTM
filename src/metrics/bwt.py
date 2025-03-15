@@ -1,13 +1,23 @@
 import json
 import numpy as np
-
 from sklearn.metrics import accuracy_score
+import configparser
+import os
 
 def compute_accuracy(y_true, results):
-    y_pred = [ line['predict'] for line in results]
-    return accuracy_score(y_true, y_pred)
-    
 
+    y_pred = [ line['predict'] for line in results]
+    filtered_data = [(p, g) for p, g in zip(y_pred, y_true) if p is not None and g is not None]
+
+    if not filtered_data:
+        pred_relations_task_1_filtered = []
+        gt_relations_filtered = []
+    else:
+        # Unzip the filtered data back into separate lists
+        pred_relations_task_1_filtered, gt_relations_filtered = zip(*filtered_data)
+    
+    return accuracy_score(gt_relations_filtered, pred_relations_task_1_filtered)
+    
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -17,37 +27,51 @@ def write_json(data, path):
     with open(path, 'w', encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
-def get_results(input_folder):
+def get_results(result_folder_folder, test_data):
+    """ Prepare Acc Matrix for BWT calculation
+    Args:
+    - input_folder: The path to the folder containing the model predictions.
+    - test_data: The path to the folder containing the test data.
+    Returns:
+    - A 2D list containing the accuracies for each task in each run.
+    """
     run = []
-    
     for run_id in range(1, 6):
         results = []
         last_task_results = []
-        for task_id in range(1, 10):
-            task = input_folder+"/model{0}/task_task{1}_current_task_result.json".format(run_id, task_id)
-            result = read_json(task)
-            
-            results.append(result[0]['acc'])
-        
-        ## task 10
 
-        task = input_folder+f"/model{run_id}/task_10_seen_task.json"
+        for task_id in range(1, 10):
+            task = result_folder_folder + f"/model{run_id}/task_{task_id}_current_task_pred.json"
+            result = read_json(task)
+            if len(result) == 1:
+                results.append(result[0]['acc'])
+            else:
+                y_true_path = f"{test_data}/run_{run_id}/task{task_id}/test_1.json"
+                y_true = [ item['relation'] for item in read_json(y_true_path)]
+                acc = compute_accuracy(y_true, result)
+                results.append(acc)
+
+        task = result_folder_folder+f"/model{run_id}/task_10_seen_task.json"
+
         last_task = read_json(task)
-        end=0
-        start=0
+        end = 0
+        start = 0
+
         for task_id in range(1, 11):
-            y_true_path = f"/Users/sefika/phd_projects/CRE_PTM copy/data/tacred/data/task_data/test/run_{run_id}/task{task_id}/test_1.json"
+            y_true_path = f"{test_data}/run_{run_id}/task{task_id}/test_1.json"
             y_true = read_json(y_true_path)
             y_true  = [line['relation'] for line in y_true]
             end = start + len(y_true)
             acc = compute_accuracy(y_true, last_task[start:end])
             start = end
             last_task_results.append(acc)
+
         results.append(last_task_results)
         
         run.append({'run_id':run_id, 'results':results})
 
     return run
+
 
 def calculate_bwt(accuracies):
     """
@@ -66,9 +90,8 @@ def calculate_bwt(accuracies):
     accuracies = np.array(accuracies)
     
     num_runs = accuracies.shape[0]
-    print(num_runs)
-
-
+    # print(accuracies)
+    # print(num_runs)
     # # Compute the backward transfer
     # # Changed the range to iterate up to the minimum of N-1 and num_runs
     for i in range(1, num_runs):
@@ -84,14 +107,17 @@ def calculate_bwt(accuracies):
         bwt /= (N - 1)  # Averaging the differences
 
     mean_bwt = bwt / num_runs
-    print(mean_bwt)
+    # print(mean_bwt)
+
     return mean_bwt
 
 if __name__ == "__main__":
-   input_folder = "/Users/sefika/phd_projects/CRE_PTM copy/src/test/results_memory_cl_tacred/memory_experiments/m10"
-   m5_accuracies = get_results(input_folder)
-   print(np.array(m5_accuracies).shape)
-   m5_bwt = calculate_bwt(m5_accuracies)
-   print(m5_bwt)
-
-   write_json(m5_bwt, "bwt_flan_t5_tacred_m_10.json")
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+    results_folder = config["METRICS"]["results_folder"]
+    test_data = config["METRICS"]["test_data_folder"]
+    bwt_file_path = config["METRICS"]["bwt_file_path"]
+    accuracy_matrix = get_results(input_folder)
+    # print(np.array(accuracy_matrix).shape)
+    bwt = calculate_bwt(accuracy_matrix)
+    write_json(bwt, bwt_file_path)
