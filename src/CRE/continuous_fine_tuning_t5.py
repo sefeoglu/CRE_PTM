@@ -26,6 +26,7 @@ nltk.download("punkt")
 # Metric
 metric = evaluate.load("rouge")
 task_path =""
+
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -35,10 +36,6 @@ def write_json(data, path):
     with open(path, 'w', encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
-def read_json(path):
-    with open(path, 'r', encoding="utf-8") as f:
-        data = json.load(f)
-    return data
 
 
 def set_dataset(dataset_id):
@@ -157,7 +154,7 @@ def compute_metrics(eval_preds):
 
     return {k: round(v, 4) for k, v in result.items()}
 
-def main(model_id, data_path, tasks_path, task_id, local):
+def main(config, model_id, data_path, tasks_path, task_id, local):
 
     targets_labels = read_json(tasks_path)
     print(targets_labels)
@@ -173,6 +170,9 @@ def main(model_id, data_path, tasks_path, task_id, local):
                   lora_dropout=0.01,
                   target_modules=["k","q","v","o"]
                   )
+    epoch = config['PARAMETERS']['epoch']
+    bs = config['PARAMETERS']['bs']
+    lr = config['PARAMETERS']['lr']
 
     dataset = set_dataset(data_path)
     model = load_model(model_id, local)
@@ -212,12 +212,12 @@ def main(model_id, data_path, tasks_path, task_id, local):
 
     training_args = Seq2SeqTrainingArguments(
         output_dir=repository_id,
-        per_device_train_batch_size=8,
-        per_device_eval_batch_size=8,
+        per_device_train_batch_size=bs,
+        per_device_eval_batch_size=bs,
         predict_with_generate=True,
         fp16=False, # Overflows with fp16
-        learning_rate=1e-3,
-        num_train_epochs=5,
+        learning_rate=lr,
+        num_train_epochs=epoch,
         # logging & evaluation strategies
         logging_dir=f"{repository_id}/logs",
         logging_strategy="steps",
@@ -259,104 +259,13 @@ def main(model_id, data_path, tasks_path, task_id, local):
     return merged_model, tokenizer, trainer
 
 
-def get_prediction(model,tokenizer, prompt, length=250,stype='greedy'):
+# def get_prediction(model,tokenizer, prompt, length=250,stype='greedy'):
 
-    inputs = tokenizer(prompt, add_special_tokens=True, max_length=4096,return_tensors="pt").input_ids.to("cuda")
+#     inputs = tokenizer(prompt, add_special_tokens=True, max_length=4096,return_tensors="pt").input_ids.to("cuda")
 
-    outputs = model.generate(inputs, max_new_tokens=length)
+#     outputs = model.generate(inputs, max_new_tokens=length)
 
-    response = tokenizer.batch_decode(outputs, skip_special_tokens=True)
+#     response = tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-    return response
-
-def Flan_T5_Trainer(config, prefix):
-    for experiment_id in range(1, 6):
-
-        print("Experiment: {0}".format(experiment_id))
-
-        dataset_path = 'memory_based_cre/train/run_{0}/task1/'.format(experiment_id)
-        tasks_path = "relations/run_{0}/task1.json".format(experiment_id)
-        model_id="google/flan-t5-base"
-        task_id = "task1"
-        targets_labels = []
-        max_source_length = None
-        max_target_length = None
-        tokenizer = set_tokenizer()
-
-        lora_config = LoraConfig(
-                        # the task to train for (sequence-to-sequence language modeling in this case)
-                        task_type=TaskType.SEQ_2_SEQ_LM,
-                        # the dimension of the low-rank matrices
-                        r=4,
-                        # the scaling factor for the low-rank matrices
-                        lora_alpha=32,
-                        # the dropout probability of the LoRA layers
-                        lora_dropout=0.01,
-                        target_modules=["k","q","v","o"]
-                        )
-        metric = evaluate.load("rouge")
-        model, tokenizer, trainer = main(model_id, dataset_path, tasks_path, task_id, False)
-
-        model.save_pretrained("KMmeans_CRE_{0}/task_memory_20_1/".format(experiment_id), from_pt=True)
-        ## evaluate model
-        evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
-
-        train_data_path = dataset_path+"train_1.json"
-        all_selected_samples = select_samples(model, tokenizer, 20, train_data_path, tasks_path)
-
-        for k in range(2, 11):
-            outpath_selected_samples = 'memory_based_cre/train/run_{0}/task_memory_{1}/train_2.json'.format(experiment_id,k)
-            write_json(all_selected_samples, outpath_selected_samples)
-
-        for i in range(1, 10):
-            targets_labels = []
-            max_source_length = None
-            max_target_length = None
-            tokenizer = set_tokenizer()
-            metric = evaluate.load("rouge")
-
-            dataset_path = 'memory_based_cre/train/run_{0}/task{1}/'.format(experiment_id,i+1)
-            tasks_path = "relations/run_{0}/task{1}.json".format(experiment_id,i+1)
-
-            base_model_id="KMmeans_CRE_{0}/task_memory_20_{1}/".format(experiment_id, i)
-            task_id = "task{0}".format(i+1)
-
-            print(base_model_id)
-
-            model, tokenizer, trainer = main(base_model_id, dataset_path, tasks_path, task_id, True)
-            #evaluate model
-            evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
-
-            if i <9:
-                train_data_path = dataset_path+"train_1.json"
-                all_selected_samples = select_samples(model, tokenizer,20, train_data_path, tasks_path)
-                for j in range(i+2, 11):
-                    outpath_selected_samples = 'memory_based_cre/train/run_{0}/task_memory_{1}/train_{2}.json'.format(experiment_id, j, i+2)
-                    write_json(all_selected_samples, outpath_selected_samples)
-                else:
-                    break
-
-            ########################### Memory Train ######################################
-            targets_labels = []
-            max_source_length = None
-            max_target_length = None
-            tokenizer = set_tokenizer()
-            metric = evaluate.load("rouge")
-
-            dataset_path = 'memory_based_cre/train/run_{0}/task_memory_{1}/'.format(experiment_id,i+1)
-            tasks_path = "relations/run_{0}/task{1}.json".format(experiment_id,i+1)
-
-            base_model_id = "KMmeans_CRE_{0}/task_memory_20_{1}/".format(experiment_id, i+1)
-            task_id = "task{0}".format(i+1)
-
-            print(base_model_id)
-
-            model, tokenizer, trainer = main(base_model_id, dataset_path, tasks_path, task_id, True)
-            model.save_pretrained("KMmeans_CRE_{0}/task_memory_20_{1}/".format(experiment_id, i+1), from_pt=True)
-            ### evaluate model
-            evaluate_model(experiment_id, task_id, model, tokenizer, current_task=False)
-
-
-
-
+#     return response
 
