@@ -33,6 +33,8 @@ $ python main.py
 ```
 or 
 follow the steps below.
+
+
 1.) Prepare datasets:
 
 **TACRED**:
