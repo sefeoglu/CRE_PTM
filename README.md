@@ -40,20 +40,20 @@ follow the steps below.
 **TACRED**:
 * This command with convert data row to (sentence, subject, object, object_type and subject_type)
 ````bash
-$ python src/data/data_prepare_tacred.py
+$ python src/data_preparetation/data_prepare_tacred.py
 ````
 * Split datasets according to setting Cui et al. 2021
 ````bash
-$ python src/data/instruction_ft_data_same_setting_tacred.py
+$ python src/data_preparetation/instruction_ft_data_same_setting_tacred.py
 ````
 **FewRel**
 * Same steps with TACRED
 ````bash
-$ python src/data/data_preparation_fewrel.py
+$ python src/data_preparetation/data_preparation_fewrel.py
 ````
 * split
 ````bash
-$ python src/data/instruction_ft_data_same_setting_fewrel.py
+$ python src/data_preparetation/instruction_ft_data_same_setting_fewrel.py
 ```` 
 2.)Trainer
 
