@@ -3,8 +3,7 @@ import json
 import evaluate
 import nltk, torch
 import numpy as np
-
-import numpy as np
+import trl
 
 from peft import get_peft_model, LoraConfig
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, TrainingArguments

@@ -1,7 +1,6 @@
 
 import json
 
-
 def read_json(path):
     with open(path, 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -22,26 +21,27 @@ def get_prediction(model,tokenizer, prompt, length=250,stype='greedy'):
     return response
 
 
-def evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True):
+def evaluate_model(inpu_folder, testdataset_folder, experiment_id, task_id, model, tokenizer, model_name, current_task=True):
     if current_task:
-      input_path = "llama_format_data/test/run_{0}/{1}/test_1.json".format(experiment_id, task_id)
+      input_path = f"{testdataset_folder}/run_{experiment_id}/{task_data}/test_1.json"
       data = read_json(input_path)
-      out_pred_path = "drive/MyDrive/ESWC-figures/fewrel/KMmeans_CRE_fewrel_{0}/task_{1}_current_task_pred.json".format(experiment_id, task_id)
-      out_acc_path = "drive/MyDrive/ESWC-figures/fewrel/KMmeans_CRE_fewrel_{0}/task_{1}_current_task_result.json".format(experiment_id, task_id)
+      out_pred_path = f"{inpu_folder}KMmeans_CRE_fewrel_{experiment_id}/task_{task_id}_current_task_pred.json"
+      out_acc_path = f"{inpu_folder}/KMmeans_CRE_fewrel_{experiment_id}/task_{task_id}_current_task_result.json"
     else:
       data = []
       for t in range(1, task_id+1):
-          input_path = "llama_format_data/test/run_{0}/task{1}/test_1.json".format(experiment_id, t)
+          input_path = f"{testdataset_folder}/run_{experiment_id}/task{t}/test_1.json"
           task_data = read_json(input_path)
           data.extend(task_data)
-      out_pred_path = "drive/MyDrive/ESWC-figures/fewrel/KMmeans_CRE_fewrel_{0}/task_{1}_seen_task.json".format(experiment_id, task_id)
-      out_acc_path = "drive/MyDrive/ESWC-figures/fewrel/KMmeans_CRE_fewrel_{0}/task_{1}_seen_task_result.json".format(experiment_id, task_id)
+      out_pred_path = f"{inpu_folder}/KMmeans_CRE_fewrel_{experiment_id}/task_{task_id}_seen_task.json"
+      out_acc_path = f"{inpu_folder}/KMmeans_CRE_fewrel_{experiment_id}/task_{task_id}_seen_task_result.json"
     responses = []
     relations = []
     for j, item in enumerate(data):
       prompt = item['prompt']
       relations.append(item['relation'])
-      prompt = f"[INST] {prompt} [\INST] ### Answer:"
+      if not "t5" in model_name:
+        prompt = f"[INST] {prompt} [\INST] ### Answer:"
       response = get_prediction(model, tokenizer, prompt)
       print('test:', j)
       if len(response) == 0:

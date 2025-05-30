@@ -6,8 +6,6 @@ from datetime import datetime
 from memory.kmeans_sampleselection import select_samples
 from cre_t5 import set_tokenizer, main
 
-
-
 nltk.download("punkt")
 metric = evaluate.load("rouge")
 from evaluation import evaluate_model, write_json
@@ -19,7 +17,8 @@ def trainer(config, memory_size=10):
     model_id = config['MODEL']["model_id"]
     base_model_name = config['MODEL']["base_model_id"]
     dataset = config['DATASET']['dataset_name']
-
+    test_results_folder = config['TEST']['test_results_folder']
+    test_dataset_folder = config['TEST']['test_dataset_folder']
     for experiment_id in range(1,6):
 
         print(f"Experiment: {experiment_id}")
@@ -28,13 +27,7 @@ def trainer(config, memory_size=10):
         tasks_path = f"{dataset}/relations/run_{experiment_id}/task1.json"
         model_id="google/flan-t5-base"
         task_id = "task1"
-
-        targets_labels = []
-        max_source_length = None
-        max_target_length = None
         tokenizer = set_tokenizer()
-
-
 
         metric = evaluate.load("rouge")
         start_time = datetime.now()
@@ -45,7 +38,8 @@ def trainer(config, memory_size=10):
 
         model.save_pretrained(f"{base_model_name}_{experiment_id}/task_memory_{memory_size}_1/", from_pt=True)
         ## evaluate model
-        evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
+        evaluate_model(test_results_folder, test_dataset_folder, experiment_id, task_id, model, tokenizer, model_id, current_task=True)
+        
         if memory_size >0:
             train_data_path = dataset_path + "train_1.json"
             all_selected_samples = select_samples(model, tokenizer, memory_size, train_data_path, tasks_path)
@@ -75,20 +69,19 @@ def trainer(config, memory_size=10):
             logs += train_time
             model.save_pretrained(f"{base_model_name}_{experiment_id}/task_memory_{memory_size}_{i+1}/", from_pt=True)
             #evaluate model
-            evaluate_model(experiment_id, task_id, model, tokenizer, current_task=True)
+            
+            evaluate_model(test_results_folder, test_dataset_folder, experiment_id, task_id, model, tokenizer, model_id, current_task=True)
             write_json(logs, f"{experiment_id}/_{experiment_id}/logs.txt")
             if memory_size > 0:
                 if i <9:
                     train_data_path = dataset_path+"train_1.json"
                     all_selected_samples = select_samples(model, tokenizer,m, train_data_path, tasks_path)
                     for j in range(i+2, 11):
-                        outpath_selected_samples = f'{dataset_name}/train/run_{experiment_id}/task_memory_{j}/train_{i+2}.json'
+                        outpath_selected_samples = f'{dataset}/train/run_{experiment_id}/task_memory_{j}/train_{i+2}.json'
                         write_json(all_selected_samples, outpath_selected_samples)
 
                 ########################### Memory Train ######################################
-                targets_labels = []
-                max_source_length = None
-                max_target_length = None
+  
                 tokenizer = set_tokenizer()
                 metric = evaluate.load("rouge")
 
@@ -107,5 +100,7 @@ def trainer(config, memory_size=10):
                 logs += train_time
                 model.save_pretrained(f"{base_model_name}_{experiment_id}/task_memory_{memory_size}_{i+1}/", from_pt=True)
                 ### evaluate model
-                evaluate_model(experiment_id, i+1, model, tokenizer, current_task=False)
+              
+                
+                evaluate_model(test_results_folder, test_dataset_folder, experiment_id, i+1, model, tokenizer, model_id, current_task=False)
                 write_json(logs, f"{base_model_name}_{experiment_id}/logs.txt")

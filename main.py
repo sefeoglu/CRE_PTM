@@ -22,7 +22,8 @@ if __name__ == "__main__":
     if config['DATA']['dataset'] == 'fewrel':
 
         data_preparation_fewrel.main(input_file, output_file, relation_id)
-        instruction_ft_data_same_setting_fewrelmain(all_train_data, all_tasks, out_folder, relation_id)
+        instruction_ft_data_same_setting_fewrel.main(all_train_data, all_tasks, out_folder, relation_id)
+        
     elif config['DATA']['dataset'] == 'tacred':
         all_test_data = config['PROMPTPREPARATION']['all_test_data']
         all_dev_data = config['PROMPTPREPARATION']['all_dev_data']
