@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 *.DS_Store
 # C extensions
-*.json
+# *.json
 *.so
 # *.txt
 *.zip
@@ -37,7 +37,7 @@ resulting_metrics/prompt_temp1_zero_shot/
 *.conll
 *.gold
 # src/
-results/
+# results/
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
