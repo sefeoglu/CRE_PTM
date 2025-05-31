@@ -1,5 +1,5 @@
 # Large Language Models for Continual Relation Extraction
-
+The results of this work have been submitted to a potential venue.
 
 
 ![CRE](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/cre.png)
