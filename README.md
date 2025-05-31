@@ -1,7 +1,7 @@
 # Large Language Models for Continual Relation Extraction
 
 
-The results and datasets used in this work are available at ...
+
 ![CRE](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/cre.png)
 **Note** Upon acceptance, trained models will be public on HuggingFace.
 
@@ -14,6 +14,8 @@ The results and datasets used in this work are available at ...
 ├── config.ini
 ├── data                            -> settings and data split setting here for tacred and fewrel like relation types per task
 ├── doc                             -> figures
+├── results                         -> results for TACRED with Flan-T5 and All Results for FewRel
+├── logs                            -> time cost logs for each experiment and FewRel's in side of FewRel results
 ├── main.py
 ├── requirements.txt                -> dependecies like libraries
 └── src
