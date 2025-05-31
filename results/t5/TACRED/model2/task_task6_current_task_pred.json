@@ -1,0 +1,404 @@
+[
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:dies"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:date_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    },
+    {
+        "predict": "per:stateorprovince_of_death"
+    }
+]

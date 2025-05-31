@@ -1,0 +1,395 @@
+[
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "org:alternate_names"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    },
+    {
+        "predict": "per:religion"
+    }
+]

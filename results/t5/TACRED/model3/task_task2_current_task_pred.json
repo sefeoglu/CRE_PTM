@@ -1,0 +1,299 @@
+[
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:schools_attended"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    },
+    {
+        "predict": "org:number_of_employees/members"
+    }
+]

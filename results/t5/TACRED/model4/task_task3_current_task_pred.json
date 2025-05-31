@@ -1,0 +1,311 @@
+[
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:city_of_headquarters"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    }
+]

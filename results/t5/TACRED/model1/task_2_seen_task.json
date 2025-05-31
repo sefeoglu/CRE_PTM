@@ -1,0 +1,773 @@
+[
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "per:other_family"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:cities_of_residence"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:origin"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "per:cause_of_death"
+    },
+    {
+        "predict": "org:dissolved"
+    },
+    {
+        "predict": "org:dissolved"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "org:member_of"
+    },
+    {
+        "predict": "org:member_of"
+    }
+]

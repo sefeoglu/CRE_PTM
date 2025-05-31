@@ -1,0 +1,386 @@
+[
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:top_members/employees"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:regional_province_of_birth"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "org:parents"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:city_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    }
+]

@@ -1,0 +1,281 @@
+[
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:age"
+    },
+    {
+        "predict": "per:country_of_birth"
+    },
+    {
+        "predict": "per:country_of_birth"
+    },
+    {
+        "predict": "per:country_of_birth"
+    },
+    {
+        "predict": "per:country_of_birth"
+    },
+    {
+        "predict": "per:country_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:city_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    },
+    {
+        "predict": "per:stateorprovince_of_birth"
+    }
+]

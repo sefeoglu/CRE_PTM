@@ -1,0 +1,401 @@
+[
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:country_of_headquarters"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:members"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "per:spouse"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:shareholders"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    },
+    {
+        "predict": "org:founded_by"
+    }
+]

@@ -1,0 +1,281 @@
+[
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "per:alternate_names"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "org:founded"
+    },
+    {
+        "predict": "per:city_of_birth"
+    },
+    {
+        "predict": "per:city_of_birth"
+    },
+    {
+        "predict": "per:city_of_birth"
+    },
+    {
+        "predict": "per:city_of_birth"
+    },
+    {
+        "predict": "per:city_of_birth"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    },
+    {
+        "predict": "per:employee_of"
+    }
+]

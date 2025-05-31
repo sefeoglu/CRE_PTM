@@ -1,0 +1,3362 @@
+[
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "member_of"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "spouse"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "club_of_the_team_/_speciality"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "located_in"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "located_in"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "located_in"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "located_in"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "located_in"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "located_in"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "member_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "location_of"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "supercarrier"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "position_played_on_team_/_speciality"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "nomination"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "nomination"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "sexuality"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "natural"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "occupation"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "event_of"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "subsidiary"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "instance_of"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "work_location"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "date"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "location_of"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "location_of"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "country"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "country_of_citizenship"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "contains_administrative_territorial_entity"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    },
+    {
+        "predict": "follows"
+    }
+]

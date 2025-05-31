@@ -1,0 +1,350 @@
+[
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:website"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "org:states_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "per:countries_of_residence"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "per:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:subsidiaries"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    },
+    {
+        "predict": "org:political/religious_affiliation"
+    }
+]
