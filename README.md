@@ -83,3 +83,19 @@ Backward Knowledge Transfer Computation
 ````bash
 $ python src/metrics/bwt.py
 ````
+### References
+```
+@inproceedings{cui-etal-2021-refining,
+  title     = {{R}efining {S}ample {E}mbeddings with {R}elation {P}rototypes to {E}nhance {C}ontinual {R}elation {E}xtraction},
+  author    = {Cui, Li and Yang, Deqing and Yu, Jiaxin and Hu, Chengwei and Cheng, Jiayang and Yi, Jingjie and Xiao, Yanghua},
+  editor    = {Zong, Chengqing and Xia, Fei and Li, Wenjie and Navigli, Roberto},
+  booktitle = {Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},
+  month     = {8},
+  year      = {2021},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2021.acl-long.20},
+  doi       = {10.18653/v1/2021.acl-long.20},
+  pages     = {232--243}
+}
+```
