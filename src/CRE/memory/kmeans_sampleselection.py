@@ -32,29 +32,25 @@ def compute_embedding(model, tokenizer, input_path):
     embeddings.append({"prompt": prompt, "relation":relation, "embedding": embedding['last_hidden_state'].data.numpy()})
   return embeddings
 
-def select_samples(model, tokenizer, memory_size, train_data_path, tasks_path):
+def select_samples(model, tokenizer, memory_size, train_data_path, tasks_path, relation_types):
   
   relations = read_json(tasks_path)
 
   embeddings = compute_embedding(model, tokenizer, train_data_path)
-  r1_emb = [ emb for emb in embeddings if emb['relation'] == relations[-1]]
-  r2_emb = [ emb for emb in embeddings if emb['relation'] == relations[-2]]
-  r3_emb = [ emb for emb in embeddings if emb['relation'] == relations[-3]]
-  r4_emb = [ emb for emb in embeddings if emb['relation'] == relations[-4]]
-  mem1, _, _,selected_samples1 = sample_selection_kmeans(r1_emb, 20)
-  mem2, _, _, selected_samples2 = sample_selection_kmeans(r2_emb, 20)
-  mem3, _, _, selected_samples3 = sample_selection_kmeans(r3_emb, 20)
-  mem4, _, _, selected_samples4 = sample_selection_kmeans(r4_emb, 20)
+  # Select the last 4 relations
+  selected_relations = relations[-relation_types:]
+
+  # Initialize lists to store results
   all_selected_samples = []
-  all_selected_samples.extend(selected_samples1)
-  all_selected_samples.extend(selected_samples2)
-  all_selected_samples.extend(selected_samples3)
-  all_selected_samples.extend(selected_samples4)
-  all_mem, saved_mem = [],[]
-  all_mem.extend(mem1)
-  all_mem.extend(mem2)
-  all_mem.extend(mem3)
-  all_mem.extend(mem4)
+  all_mem = []
+  saved_mem = []
+  # Iterate over the selected relations and apply sampling
+  for rel in selected_relations:
+      rel_emb = [emb for emb in embeddings if emb['relation'] == rel]
+      mem, _, _, selected_samples = sample_selection_kmeans(rel_emb, memory_size)
+      all_mem.extend(mem)
+      all_selected_samples.extend(selected_samples)
+
 
   for i, mem in enumerate(all_mem):
      saved_mem.append({"prompt":all_selected_samples[i]['prompt'], "embedding":mem})

@@ -18,6 +18,8 @@ if __name__ == "__main__":
     all_train_data = config['PROMPTPREPARATION']['all_train_data']
     all_tasks = config['PROMPTPREPARATION']['all_tasks']
     out_folder = config['PROMPTPREPARATION']['out_folder']
+    relation_num = int(config['DATAPREPARATION']['relation_types'])
+    memory_size = int(config['MODEL']['memory_size'])
     ## 1. Data preparation and preprocessing
     if config['DATA']['dataset'] == 'fewrel':
 
@@ -25,6 +27,7 @@ if __name__ == "__main__":
         instruction_ft_data_same_setting_fewrel.main(all_train_data, all_tasks, out_folder, relation_id)
         
     elif config['DATA']['dataset'] == 'tacred':
+        
         all_test_data = config['PROMPTPREPARATION']['all_test_data']
         all_dev_data = config['PROMPTPREPARATION']['all_dev_data']
         data_preparation_tacred.main(input_file, output_file)
@@ -34,9 +37,9 @@ if __name__ == "__main__":
 
     ## 2. Model Training, Evaluation and Prediction
     if config['MODEL']['model_id'] == 't5':
-        trainer_t5.trainer(config, memory_size=10)
+        trainer_t5.trainer(config, memory_size, relation_num)
     elif config['MODEL']['model_id'] == 'decoder':
-        trainer_decoder.trainer(config, memory_size=10)
+        trainer_decoder.trainer(config, memory_size, relation_num)
     else:
         print('Model not supported')
   

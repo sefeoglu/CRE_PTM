@@ -10,7 +10,7 @@ nltk.download("punkt")
 metric = evaluate.load("rouge")
 from evaluation import evaluate_model, write_json
 
-def trainer(config, memory_size=10):
+def trainer(config, memory_size=10, relation_types=4):
     logs = ""
 
     m = memory_size
@@ -42,7 +42,7 @@ def trainer(config, memory_size=10):
         
         if memory_size >0:
             train_data_path = dataset_path + "train_1.json"
-            all_selected_samples = select_samples(model, tokenizer, memory_size, train_data_path, tasks_path)
+            all_selected_samples = select_samples(model, tokenizer, memory_size, train_data_path, tasks_path, relation_types)
 
             for k in range(2, 11):
                 outpath_selected_samples = f"{dataset}/train/run_{experiment_id}/task_memory_{k}/train_2.json"
@@ -75,7 +75,7 @@ def trainer(config, memory_size=10):
             if memory_size > 0:
                 if i <9:
                     train_data_path = dataset_path+"train_1.json"
-                    all_selected_samples = select_samples(model, tokenizer,m, train_data_path, tasks_path)
+                    all_selected_samples = select_samples(model, tokenizer,m, train_data_path, tasks_path, relation_types)
                     for j in range(i+2, 11):
                         outpath_selected_samples = f'{dataset}/train/run_{experiment_id}/task_memory_{j}/train_{i+2}.json'
                         write_json(all_selected_samples, outpath_selected_samples)
