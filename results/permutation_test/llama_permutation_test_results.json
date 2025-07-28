@@ -1,26 +1,38 @@
 {
     "no_replay_vs_memory_15_iter_100": {
         "diff": -4.059686279283255,
-        "p_val": 0.41
+        "p_val": 0.36
     },
     "no_replay_vs_memory_10_iter_100": {
         "diff": -7.277483805585007,
-        "p_val": 0.16
+        "p_val": 0.1
     },
     "no_replay_vs_memory_5_iter_100": {
         "diff": -6.056072595928441,
-        "p_val": 0.1
+        "p_val": 0.09
     },
     "no_replay_vs_memory_15_iter_1000": {
         "diff": -4.059686279283255,
-        "p_val": 0.398
+        "p_val": 0.392
     },
     "no_replay_vs_memory_10_iter_1000": {
         "diff": -7.277483805585007,
-        "p_val": 0.114
+        "p_val": 0.108
     },
     "no_replay_vs_memory_5_iter_1000": {
         "diff": -6.056072595928441,
-        "p_val": 0.108
+        "p_val": 0.094
+    },
+    "no_replay_vs_memory_15_iter_10000": {
+        "diff": -4.059686279283255,
+        "p_val": 0.3967
+    },
+    "no_replay_vs_memory_10_iter_10000": {
+        "diff": -7.277483805585007,
+        "p_val": 0.0994
+    },
+    "no_replay_vs_memory_5_iter_10000": {
+        "diff": -6.056072595928441,
+        "p_val": 0.1007
     }
 }
