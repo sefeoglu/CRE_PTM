@@ -5,11 +5,11 @@
     },
     "no_replay_vs_memory_10_iter_100": {
         "diff": -0.1308258381030214,
-        "p_val": 0.82
+        "p_val": 0.87
     },
     "no_replay_vs_memory_5_iter_100": {
         "diff": -0.24529844644318644,
-        "p_val": 0.7
+        "p_val": 0.68
     },
     "no_replay_vs_memory_15_iter_1000": {
         "diff": 0.01635322976287057,
@@ -17,10 +17,22 @@
     },
     "no_replay_vs_memory_10_iter_1000": {
         "diff": -0.1308258381030214,
-        "p_val": 0.856
+        "p_val": 0.855
     },
     "no_replay_vs_memory_5_iter_1000": {
         "diff": -0.24529844644318644,
-        "p_val": 0.648
+        "p_val": 0.637
+    },
+    "no_replay_vs_memory_15_iter_10000": {
+        "diff": 0.01635322976287057,
+        "p_val": 1.0
+    },
+    "no_replay_vs_memory_10_iter_10000": {
+        "diff": -0.1308258381030214,
+        "p_val": 0.8571
+    },
+    "no_replay_vs_memory_5_iter_10000": {
+        "diff": -0.24529844644318644,
+        "p_val": 0.6701
     }
 }
