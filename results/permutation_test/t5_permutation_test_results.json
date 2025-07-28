@@ -1,0 +1,26 @@
+{
+    "no_replay_vs_memory_15_iter_100": {
+        "diff": -3.646770237121828,
+        "p_val": 0.02
+    },
+    "no_replay_vs_memory_10_iter_100": {
+        "diff": -3.1071136549468577,
+        "p_val": 0.07
+    },
+    "no_replay_vs_memory_5_iter_100": {
+        "diff": -2.5020441537203624,
+        "p_val": 0.12
+    },
+    "no_replay_vs_memory_15_iter_1000": {
+        "diff": -3.646770237121828,
+        "p_val": 0.036
+    },
+    "no_replay_vs_memory_10_iter_1000": {
+        "diff": -3.1071136549468577,
+        "p_val": 0.046
+    },
+    "no_replay_vs_memory_5_iter_1000": {
+        "diff": -2.5020441537203624,
+        "p_val": 0.116
+    }
+}
