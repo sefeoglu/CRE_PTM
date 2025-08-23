@@ -1,5 +1,5 @@
 # Large Language Models for Continual Relation Extraction
-The results of this work have been submitted to Springer Nature Machine Learning Journal!
+The results of this work have been submitted to Springer Applied Intelligence Journal!
 It is under revision !
 
 
