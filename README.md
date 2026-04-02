@@ -1,5 +1,5 @@
 # Large Language Models for Continual Relation Extraction
-The results of this work have been submitted to possible IEEE Journal!
+The results of this work have been accepted by Applied Research Paper Track of IEEE Access Journal !
 It is under revision !
 
 
