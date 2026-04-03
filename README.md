@@ -4,7 +4,7 @@ It is under revision !
 
 
 ![CRE](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/cre.png)
-**Note** Upon acceptance, trained models will be public on HuggingFace.
+**Note** Trained models are public on HuggingFace, as stated in the journal article.
 
 
 ## Folder Structure
