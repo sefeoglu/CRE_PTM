@@ -2,7 +2,7 @@
 Published at Applied Research Paper Track of IEEE Access Journal!
 ## Cite
 ```
-@ARTICLE{11478401,
+@ARTICLE{efeoglu_2026,
   author={Efeoglu, Sefika and Paschke, Adrian and Schimmler, Sonja},
   journal={IEEE Access}, 
   title={Large Language Models for Continual Relation Extraction}, 
