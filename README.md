@@ -10,7 +10,7 @@ Published at Applied Research Paper Track of IEEE Access Journal!
   volume={},
   number={},
   pages={1-1},
-  keywords={Central Processing Unit;Microwave integrated circuits;LoRa;Radio access networks;Regional area networks;Internet;Communication systems;Electronic mail;Semantic Web;Computer networks;Continual Relation Extraction;Schema-Level Errors;Large Language Models;Knowledge Graph Construction},
+  keywords={Semantic Web;Computer networks;Continual Relation Extraction;Schema-Level Errors;Large Language Models;Knowledge Graph Construction},
   doi={10.1109/ACCESS.2026.3682652}}
 
 ```
