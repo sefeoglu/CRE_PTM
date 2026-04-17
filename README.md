@@ -1,6 +1,19 @@
 # Large Language Models for Continual Relation Extraction
-The results of this work have been accepted by Applied Research Paper Track of IEEE Access Journal !
+Published at Applied Research Paper Track of IEEE Access Journal!
+## Cite
+```
+@ARTICLE{11478401,
+  author={Efeoglu, Sefika and Paschke, Adrian and Schimmler, Sonja},
+  journal={IEEE Access}, 
+  title={Large Language Models for Continual Relation Extraction}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Central Processing Unit;Microwave integrated circuits;LoRa;Radio access networks;Regional area networks;Internet;Communication systems;Electronic mail;Semantic Web;Computer networks;Continual Relation Extraction;Schema-Level Errors;Large Language Models;Knowledge Graph Construction},
+  doi={10.1109/ACCESS.2026.3682652}}
 
+```
 
 
 ![CRE](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/cre.png)
