@@ -1,30 +1,12 @@
-import sys
-import os
-import json
 import random
 import configparser
-sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+from pathlib import Path
 
+from src.utils import read_json, write_json as _write_json
 
-PACKAGE_PARENT = '.'
-SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
-sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
-PREFIX_PATH = "/".join(os.path.dirname(os.path.abspath(__file__)).split("/")[:-2]) + "/"
-print(PREFIX_PATH)
-
-def read_json(path):
-    """ Read a json file from the given path."""
-    with open(path, 'r') as f:
-        data = json.load(f)
-    return data
 
 def write_json(path, data):
-    """ Write a json file to the given path."""
-    if not os.path.exists(os.path.dirname(path)):
-        os.makedirs(os.path.dirname(path))
-        
-    with open(path, 'w', encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+    _write_json(data, path)
 
 
 def get_prompt(sentence, head, tail, relations, prompt_type):
@@ -69,8 +51,6 @@ def prepare_instructions(task_train_data, task_dev_data, task_test_data, relatio
     Return: task_dev_data, task_test_data
     """
     data = {"train":task_train_data, "dev":task_dev_data}
-    selected_data = []
-
     for key, value in data.items():
     
         out_file_path = out_folder+"train/run_{0}/task{1}/{2}_1.json".format(run_id, task_id, key)
@@ -104,8 +84,8 @@ def prepare_instructions(task_train_data, task_dev_data, task_test_data, relatio
 
         for line in selected_data:
             # input = {"id":line["id"],"sentence":line['sentence'],"subject": line['subject'], "object": line['object'], "subject_type":line["subject_type"], "object_type":line["object_type"],  "relation": line['relation']}
-            input = {"prompt":get_prompt(line['sentence'], line['subject'], line['object'], relations, prompt_type), "relation": line['relation']}
-            prompts.append(input)
+            prompt_item = {"prompt":get_prompt(line['sentence'], line['subject'], line['object'], relations, prompt_type), "relation": line['relation']}
+            prompts.append(prompt_item)
             
         
         # print(len(relations))
@@ -134,8 +114,8 @@ def prepare_instructions(task_train_data, task_dev_data, task_test_data, relatio
         
     for line in selected_test_data:
         # input = {"id":line["id"],"sentence":line['sentence'],"subject": line['subject'], "object": line['object'], "subject_type":line["subject_type"],"object_type":line["object_type"], "relation": line['relation']}
-        input = {"prompt":get_prompt(line['sentence'],line['subject'], line['object'], relations, prompt_type), "relation":line['relation']}
-        prompts.append(input)
+        prompt_item = {"prompt":get_prompt(line['sentence'],line['subject'], line['object'], relations, prompt_type), "relation":line['relation']}
+        prompts.append(prompt_item)
 
     write_json(out_test_file_path, prompts)
     return task_dev_data, task_test_data
@@ -170,14 +150,13 @@ def main(all_train_data_path, all_dev_data_path, all_test_data_path, all_tasks_p
             task_train_data = [item for item in all_train_data if item['relation'] in task_relations]
             task_test_data = [item for item in all_test_data if item['relation'] in task_relations]
             task_dev_data = [item for item in all_dev_data if item['relation'] in task_relations]
-            test_relations = [item['relation'] for item in all_test_data if item['relation'] in task_relations]
-           
             prepare_instructions(task_train_data, task_dev_data, task_test_data, task_relations, task_relations,task_id, run_id, out_folder, prompt_type)
 
 if __name__ == "__main__":
 
     config = configparser.ConfigParser()
-    config.read(PREFIX_PATH+'config.ini')
+    project_root = Path(__file__).resolve().parents[2]
+    config.read(project_root / 'config.ini')
     all_train_data  = config['PROMPTPREPARATION']['all_train_data']
     all_test_data = config['PROMPTPREPARATION']['all_test_data']
     all_dev_data = config['PROMPTPREPARATION']['all_dev_data']

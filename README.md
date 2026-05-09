@@ -54,9 +54,9 @@ follow the steps below.
 1.) Prepare datasets:
 
 **TACRED**:
-* This command with convert data row to (sentence, subject, object, object_type and subject_type)
+* This command converts raw rows to `(sentence, subject, object, object_type, subject_type)` format.
 ````bash
-$ python src/data_preparetation/data_prepare_tacred.py
+$ python src/data_preparetation/data_preparation_tacred.py
 ````
 * Split datasets according to setting Cui et al. 2021
 ````bash
@@ -75,7 +75,7 @@ $ python src/data_preparetation/instruction_ft_data_same_setting_fewrel.py
 
  * Decoder only models(Llama2-7B-chat-hf and Mistral-Instruct-7B-v2.0)
 ````bash
-$ python python src/CRE/trainer_decoder.py
+$ python src/CRE/trainer_decoder.py
 ````
  * Encoder-Decoder model(Flan T5-Base)
 ````bash
