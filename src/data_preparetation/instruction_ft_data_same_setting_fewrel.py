@@ -1,31 +1,12 @@
-import sys
-import os
-import json
-import random
-from sklearn.model_selection import train_test_split
 import configparser
-sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+from pathlib import Path
+from sklearn.model_selection import train_test_split
 
+from src.utils import read_json, write_json as _write_json
 
-PACKAGE_PARENT = '.'
-SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
-sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
-PREFIX_PATH = "/".join(os.path.dirname(os.path.abspath(__file__)).split("/")[:-2]) + "/"
-print(PREFIX_PATH)
-
-def read_json(path):
-    """ Read a json file from the given path."""
-    with open(path, 'r') as f:
-        data = json.load(f)
-    return data
 
 def write_json(path, data):
-    """ Write a json file to the given path."""
-    if not os.path.exists(os.path.dirname(path)):
-        os.makedirs(os.path.dirname(path))
-        
-    with open(path, 'w', encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+    _write_json(data, path)
 
 
 def get_prompt(sentence, head, tail, relations, prompt_type):
@@ -90,15 +71,15 @@ def prepare_instruction(task_train_data, relations, task_relations, task_id, run
         prompts = []
         for line in train_selected_data:
             relations_list = [relation_id[PID][0] for PID in relations]
-            input = {"prompt":get_prompt(line['sentence'], line['subject'], line['object'], relations_list, prompt_type), "relation": line['relation'].replace(" ","_")}
-            prompts.append(input)
+            prompt_item = {"prompt":get_prompt(line['sentence'], line['subject'], line['object'], relations_list, prompt_type), "relation": line['relation'].replace(" ","_")}
+            prompts.append(prompt_item)
             # print(len(relations))
         write_json(train_out_file_path, prompts)
         prompts = []
         for line in val_data_selected:
             relations_list = [relation_id[PID][0] for PID in relations]
-            input = {"prompt":get_prompt(line['sentence'], line['subject'], line['object'], relations_list, prompt_type), "relation": line['relation'].replace(" ","_")}
-            prompts.append(input)
+            prompt_item = {"prompt":get_prompt(line['sentence'], line['subject'], line['object'], relations_list, prompt_type), "relation": line['relation'].replace(" ","_")}
+            prompts.append(prompt_item)
             # print(len(relations))
         write_json(val_out_file_path, prompts)
 
@@ -111,8 +92,8 @@ def prepare_instruction(task_train_data, relations, task_relations, task_id, run
         prompts = []
         for line in test_data_selected:
             relations_list = [relation_id[PID][0] for PID in relations]
-            input = {"prompt":get_prompt(line['sentence'], line['subject'], line['object'], relations_list, prompt_type), "relation": line['relation'].replace(" ","_")}
-            prompts.append(input)
+            prompt_item = {"prompt":get_prompt(line['sentence'], line['subject'], line['object'], relations_list, prompt_type), "relation": line['relation'].replace(" ","_")}
+            prompts.append(prompt_item)
 
             # print(len(relations))
         write_json(test_out_file_path, prompts)
@@ -151,7 +132,8 @@ def main(all_train_data_path, all_tasks_path, out_folder_path, relation_id_path)
 
 if __name__ == "__main__":
     config = configparser.ConfigParser()
-    config.read(PREFIX_PATH+'config.ini')
+    project_root = Path(__file__).resolve().parents[2]
+    config.read(project_root / 'config.ini')
     all_train_data = config['PROMPTPREPARATION']['all_train_data']
     all_tasks = config['PROMPTPREPARATION']['all_tasks']
     relation_id = config['PROMPTPREPARATION']['relation_id']
