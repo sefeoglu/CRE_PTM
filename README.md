@@ -1,104 +1,159 @@
-# Large Language Models for Continual Relation Extraction
-Published at Applied Research Paper Track of IEEE Access Journal!
-## Cite
-```
-@ARTICLE{efeoglu_2026,
-  author={Efeoglu, Sefika and Paschke, Adrian and Schimmler, Sonja},
-  journal={IEEE Access}, 
-  title={Large Language Models for Continual Relation Extraction}, 
-  year={2026},
-  volume={},
-  number={},
-  pages={1-1},
-  keywords={Semantic Web;Computer networks;Continual Relation Extraction;Schema-Level Errors;Large Language Models;Knowledge Graph Construction},
-  doi={10.1109/ACCESS.2026.3682652}}
+# CRE_PTM
 
-```
+[![Paper](https://img.shields.io/badge/IEEEXplore-Access%20Paper-0078D4?style=for-the-badge&logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/10.1109/ACCESS.2026.3682652)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-HuggingFace-FFD21F?style=for-the-badge)](https://huggingface.co)
+[![GitHub](https://img.shields.io/badge/GitHub-CRE__PTM-181717?style=for-the-badge&logo=github)](https://github.com/sefeoglu/CRE_PTM)
 
+Large Language Models for Continual Relation Extraction.
+
+This repository contains the source code and experimental pipeline for the paper "Large Language Models for Continual Relation Extraction". It includes data preparation, continual relation extraction training, metric computation, and result analysis for FewRel and TACRED using both encoder-decoder and decoder-only models.
 
 ![CRE](https://github.com/sefeoglu/CRE_PTM/blob/master/doc/cre.png)
-**Note** Trained models are public on HuggingFace, as stated in the journal article.
 
+> Trained models are publicly available on Hugging Face, as described in the journal article.
+
+## Overview
+
+The project studies continual relation extraction with large language models in task-incremental settings. It covers:
+
+- FewRel and TACRED preprocessing and task splitting
+- Prompt-based data construction for continual learning
+- Training pipelines for Flan T5, Llama 2, and Mistral
+- Evaluation metrics for average accuracy, whole accuracy, and backward transfer
+- Result cleaning and visualization utilities
+
+## Citation
+
+```bibtex
+@ARTICLE{efeoglu_2026,
+  author={Efeoglu, Sefika and Paschke, Adrian and Schimmler, Sonja},
+  journal={IEEE Access},
+  title={Large Language Models for Continual Relation Extraction},
+  year={2026},
+  keywords={Semantic Web;Computer networks;Continual Relation Extraction;Schema-Level Errors;Large Language Models;Knowledge Graph Construction},
+  doi={10.1109/ACCESS.2026.3682652}
+}
+```
+
+## Setup
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/sefeoglu/CRE_PTM.git
+cd CRE_PTM
+pip install -r requirements.txt
+```
+
+## Quick Start
+
+The project reads configuration from `config.ini` and can be run with:
+
+```bash
+python main.py
+```
+
+Alternatively, follow the steps below to run the pipeline manually.
+
+## Data Preparation
+
+### TACRED
+
+Convert raw TACRED samples into the required schema `(sentence, subject, object, object_type, subject_type)`:
+
+```bash
+python src/data_preparetation/data_preparation_tacred.py
+```
+
+Split the dataset according to the task setup from the paper:
+
+```bash
+python src/data_preparetation/instruction_ft_data_same_setting_tacred.py
+```
+
+### FewRel
+
+Prepare the raw FewRel data:
+
+```bash
+python src/data_preparetation/data_preparation_fewrel.py
+```
+
+Generate task-level prompt data:
+
+```bash
+python src/data_preparetation/instruction_ft_data_same_setting_fewrel.py
+```
+
+## Training
+
+### Decoder-only models
+
+For Llama 2 and Mistral-style models:
+
+```bash
+python src/CRE/trainer_decoder.py
+```
+
+### Encoder-decoder model
+
+For Flan T5:
+
+```bash
+python src/CRE/trainer_t5.py
+```
+
+## Evaluation and Post-processing
+
+Clean decoder-only outputs that may contain explanations or extra text:
+
+```bash
+python src/clean/clean_decoder_results.py
+```
+
+Compute average and whole accuracy metrics:
+
+```bash
+python src/metrics/cl_metrics.py
+```
+
+Compute backward knowledge transfer:
+
+```bash
+python src/metrics/bwt.py
+```
 
 ## Folder Structure
-```xml
+
+```text
 .
 ├── LICENSE
 ├── README.md
 ├── config.ini
-├── data                            -> settings and data split setting here for tacred and fewrel like relation types per task
-├── doc                             -> figures
-├── results                         -> results for TACRED with Flan-T5 and All Results for FewRel
-├── logs                            -> time cost logs for each experiment and FewRel's in side of FewRel results
+├── data/
+│   ├── fewrel/
+│   └── tacred/
+├── doc/
+├── logs/
 ├── main.py
-├── requirements.txt                -> dependecies like libraries
-└── src
-    ├── CRE                         -> continual training of Flan T5 Base, Llama2 and Mistral
-    ├── analysis_viz                -> Visualization like logs and  section 4 figures.
-    ├── clean                       -> cleaning of results of llama and mistral from explainations and instructions.
-    ├── data_preparetation          -> prompt dataset generation
-    ├── metrics                     -> bwt, whole and average accuracy calculation
-    ├── utils.py                    -> read and write
-    └── zero_shot_prompting         -> ablation study, but not in the paper.
-````
-        
-## How it works
-Setup configuration in `config.ini` according to your needs before starting running experiments.
-```bash
-$ python main.py
+├── requirements.txt
+├── results/
+├── src/
+│   ├── CRE/
+│   ├── analysis_viz/
+│   ├── clean/
+│   ├── data_preparetation/
+│   ├── metrics/
+│   ├── utils.py
+│   └── zero_shot_prompting/
+└── ...
 ```
-or 
-follow the steps below.
 
+## References
 
-1.) Prepare datasets:
-
-**TACRED**:
-* This command converts raw rows to `(sentence, subject, object, object_type, subject_type)` format.
-````bash
-$ python src/data_preparetation/data_preparation_tacred.py
-````
-* Split datasets according to setting Cui et al. 2021
-````bash
-$ python src/data_preparetation/instruction_ft_data_same_setting_tacred.py
-````
-**FewRel**
-* Same steps with TACRED
-````bash
-$ python src/data_preparetation/data_preparation_fewrel.py
-````
-* split
-````bash
-$ python src/data_preparetation/instruction_ft_data_same_setting_fewrel.py
-```` 
-2.)Trainer
-
- * Decoder only models(Llama2-7B-chat-hf and Mistral-Instruct-7B-v2.0)
-````bash
-$ python src/CRE/trainer_decoder.py
-````
- * Encoder-Decoder model(Flan T5-Base)
-````bash
-$ python src/CRE/trainer_t5.py
-````
-3.) Clean decoder-only models results from explainations
-
-````bash
-$ python src/clean/clean_decoder_results.py
-````
-4.) Metrics
-
-Average and Whole Accuracy Metrics
-````bash
-$ python src/metrics/cl_metrics.py
-
-````
-Backward Knowledge Transfer Computation
-````bash
-$ python src/metrics/bwt.py
-````
-### References
-```
+```bibtex
 @inproceedings{cui-etal-2021-refining,
   title     = {{R}efining {S}ample {E}mbeddings with {R}elation {P}rototypes to {E}nhance {C}ontinual {R}elation {E}xtraction},
   author    = {Cui, Li and Yang, Deqing and Yu, Jiaxin and Hu, Chengwei and Cheng, Jiayang and Yi, Jingjie and Xiao, Yanghua},
@@ -113,3 +168,7 @@ $ python src/metrics/bwt.py
   pages     = {232--243}
 }
 ```
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
