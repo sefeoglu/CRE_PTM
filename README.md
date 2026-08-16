@@ -1,10 +1,14 @@
 # CRE_PTM
 
-[![Paper](https://img.shields.io/badge/IEEEXplore-Access%20Paper-0078D4?style=for-the-badge&logo=ieee&logoColor=white)](https://ieeexplore.ieee.org/document/10.1109/ACCESS.2026.3682652)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-HuggingFace-FFD21F?style=for-the-badge)](https://huggingface.co)
-[![GitHub](https://img.shields.io/badge/GitHub-CRE__PTM-181717?style=for-the-badge&logo=github)](https://github.com/sefeoglu/CRE_PTM)
+<div align="center">
+
+[![Paper](https://img.shields.io/badge/DOI-10.1109%2FACCESS.2026.3682652-0078D4?style=flat-square&logo=doi&logoColor=white)](https://doi.org/10.1109/ACCESS.2026.3682652)
+[![License](https://img.shields.io/badge/License-MIT-2E8B57?style=flat-square)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-Models-FFD21F?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)
+[![GitHub](https://img.shields.io/badge/GitHub-CRE__PTM-181717?style=flat-square&logo=github)](https://github.com/sefeoglu/CRE_PTM)
+
+</div>
 
 Large Language Models for Continual Relation Extraction.
 
