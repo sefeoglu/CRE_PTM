@@ -2,11 +2,11 @@
 
 <div align="center">
 
-[![Paper](https://img.shields.io/badge/DOI-10.1109%2FACCESS.2026.3682652-0078D4?style=flat-square&logo=doi&logoColor=white)](https://doi.org/10.1109/ACCESS.2026.3682652)
-[![License](https://img.shields.io/badge/License-MIT-2E8B57?style=flat-square)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-Models-FFD21F?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)
-[![GitHub](https://img.shields.io/badge/GitHub-CRE__PTM-181717?style=flat-square&logo=github)](https://github.com/sefeoglu/CRE_PTM)
+<a href="https://doi.org/10.1109/ACCESS.2026.3682652"><img alt="DOI" src="https://img.shields.io/badge/DOI-10.1109%2FACCESS.2026.3682652-0A66C2?style=flat&labelColor=0B3D91&logo=doi&logoColor=white" /></a>
+<a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-2ECC71?style=flat&labelColor=1E7F5A" /></a>
+<a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&labelColor=1F4E79&logo=python&logoColor=white" /></a>
+<a href="https://huggingface.co"><img alt="Hugging Face" src="https://img.shields.io/badge/HuggingFace-Models-FBBF24?style=flat&labelColor=E59E0B&logo=huggingface&logoColor=black" /></a>
+<a href="https://github.com/sefeoglu/CRE_PTM"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-CRE__PTM-24292F?style=flat&labelColor=111827&logo=github&logoColor=white" /></a>
 
 </div>
 
