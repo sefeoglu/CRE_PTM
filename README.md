@@ -1,4 +1,4 @@
-# CRE_PTM
+# Large Language Models for Continual Relation Extraction
 
 <div align="center">
 
